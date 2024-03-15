@@ -99,7 +99,7 @@ public class Challenge1 {
 
     public static void strukPembayaran(ArrayList<Object[]> selected){
         try {
-            FileWriter writer = new FileWriter("struk.txt");
+            FileWriter writer = new FileWriter("strukPembayaran.txt");
             BufferedWriter bwr = new BufferedWriter(writer);
             bwr.write("===============================\n" +
                     "BinarFud\n" +
