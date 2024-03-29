@@ -4,12 +4,26 @@ import org.example.Data;
 import org.example.model.Menu;
 import org.example.model.OrderedItem;
 
-import java.util.List;
 import java.util.Map;
 
 public class OrderServiceImpl implements OrderService{
     @Override
     public Menu getMenu(int id) {
         return Data.menuMap.get(id);
+    }
+
+    @Override
+    public int getTotalQty(Map<Integer, OrderedItem> orderedItemMap) {
+        return 0;
+    }
+
+    @Override
+    public int getTotalPrice(Map<Integer, OrderedItem> orderedItemMap) {
+        return 0;
+    }
+
+    @Override
+    public OrderedItem getOrderedItem(int id) {
+        return Data.orderedItemMap.get(id);
     }
 }

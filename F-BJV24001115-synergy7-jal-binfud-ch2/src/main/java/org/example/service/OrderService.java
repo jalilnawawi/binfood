@@ -8,4 +8,9 @@ import java.util.Map;
 
 public interface OrderService {
     Menu getMenu(int id);
+    int getTotalQty(Map<Integer, OrderedItem> orderedItemMap);
+
+    int getTotalPrice(Map<Integer, OrderedItem> orderedItemMap);
+
+    OrderedItem getOrderedItem(int id);
 }

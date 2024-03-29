@@ -10,6 +10,9 @@ import java.util.Map;
 
 public class Data {
     public static Map<Integer, Menu> menuMap = new HashMap<>();
+    public static Map<Integer, OrderedItem> orderedItemMap = new HashMap<>();
+
+    public  static List<OrderedItem> orderList = new ArrayList<>(orderedItemMap.values());
 
     public static void initiateData(){
         Menu menu1 = new Menu()

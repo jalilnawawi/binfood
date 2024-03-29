@@ -19,6 +19,8 @@ public class MenuView {
                     + menuMap.get(key).getPrice()
             );
         }
+        System.out.println("99." + "Pesan dan Bayar");
+        System.out.println("0." + "Keluar aplikasi");
 
     }
 }
