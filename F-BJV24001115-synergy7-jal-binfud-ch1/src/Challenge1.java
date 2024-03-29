@@ -1,6 +1,7 @@
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -32,7 +33,7 @@ public class Challenge1 {
         //memilih menu
         Scanner selectMenu = new Scanner(System.in);
         System.out.print("Pilih menu anda => ");
-        int select = selectMenu.nextInt();
+        int     select = selectMenu.nextInt();
 
         System.out.println();
         if (select >= 1 && select <= menu.length){
