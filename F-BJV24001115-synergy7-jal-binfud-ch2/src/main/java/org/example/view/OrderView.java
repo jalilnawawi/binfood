@@ -5,9 +5,7 @@ import org.example.controller.OrderController;
 
 import java.util.*;
 
-import static org.example.Data.orderList;
-import static org.example.Data.orderedItemMap;
-
+import static org.example.Data.*;
 
 
 public class OrderView {
@@ -18,7 +16,7 @@ public class OrderView {
         int selectItem = inputItemId.nextInt();
 
         OrderController orderController = new OrderController();
-        orderController.menuSelection(selectItem, orderedItemMap, orderList);
+        orderController.menuSelection(selectItem, orderedItemMap, orderedItemList, orderList);
 
         if (selectItem > 5 && selectItem != 99 && selectItem != 0){
             System.out.println("========================");
@@ -31,7 +29,7 @@ public class OrderView {
             Scanner input = new Scanner(System.in);
             String option = input.next();
 
-            if (!option.equals("Y") && !option.equals("n")){
+            if (!option.equals("Y") && !option.equals("y") && !option.equals("n")){
                 System.exit(1);
             } else {
                 MenuController menuController = new MenuController();
@@ -66,7 +64,7 @@ public class OrderView {
 
     public void confirmPay(){
         OrderController orderController = new OrderController();
-        orderController.displayConfirmPay(orderList);
+        orderController.displayConfirmPay(orderedItemList);
     }
 
     public void optionLast(){
@@ -79,7 +77,12 @@ public class OrderView {
         int selectMenu = optionMenu.nextInt();
 
         OrderController orderController = new OrderController();
-        orderController.optionLast(selectMenu);
+        orderController.optionLast(selectMenu, orderedItemList, orderList);
+    }
+
+    public void printReceipt(){
+        OrderController orderController = new OrderController();
+        orderController.printReceipt(orderedItemList, orderList);
     }
 }
 

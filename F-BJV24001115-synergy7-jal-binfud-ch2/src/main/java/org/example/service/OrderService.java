@@ -1,16 +1,22 @@
 package org.example.service;
 
 import org.example.model.Menu;
+import org.example.model.Order;
 import org.example.model.OrderedItem;
 
 import java.util.List;
-import java.util.Map;
 
 public interface OrderService {
     Menu getMenu(int id);
-    int getTotalQty(Map<Integer, OrderedItem> orderedItemMap);
+    int getTotalQty(List<OrderedItem> orderList);
 
-    int getTotalPrice(Map<Integer, OrderedItem> orderedItemMap);
+    int getTotalPrice(List<OrderedItem> orderList);
 
     OrderedItem getOrderedItem(int id);
+
+    Long generateOrderId();
+
+    List<Order> getOrderList();
+
+    void printReceipt();
 }

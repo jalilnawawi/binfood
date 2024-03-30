@@ -1,0 +1,32 @@
+
+	java:S1125"FDefine and throw a dedicated exception instead of using a generic one.(¯åÕøÿÿÿÿ8œçÿ„é1J$af240e4d-9a77-4f9a-ae87-953a71f95e1e
+	java:S112¤"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8çÿ„é1J$97d4e221-41b3-4a33-af25-834f47c50d35
+¤
+java:S1192€"aDefine a constant instead of duplicating this literal "===============================
+" 3 times.(Áâ‚^8¡çÿ„é1J$63bc2d26-dec8-414b-af86-4142abb00936
+r	java:S1062"+Replace this use of System.out by a logger.(š§‰Ÿùÿÿÿÿ8«çÿ„é1J$c5fc0b57-a2b8-4b1d-bd29-a2cf7e62e9f5
+z
+java:S61262"2Replace this String concatenation with Text block.(š§‰Ÿùÿÿÿÿ8¬çÿ„é1J$162da2c6-43be-42bc-9ff8-c86325602bdf
+m	java:S106F"+Replace this use of System.out by a logger.(™²“õ8ïºçßè1J$fcf1a7a6-1a96-4353-bedc-46d9d0227789
+r	java:S106G"+Replace this use of System.out by a logger.(¼×¯ğúÿÿÿÿ8ïºçßè1J$42cd36e3-0c97-4a07-b570-9c2b5e440dad
+m	java:S106H"+Replace this use of System.out by a logger.(™²“õ8ğºçßè1J$53ae9c6d-6ad5-47fb-9765-8519fcdecdbf
+r	java:S106O"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8ğºçßè1J$d040ed68-c05a-4ebd-8033-b769b134cfd4
+l	java:S106P"+Replace this use of System.out by a logger.(ÀÅÛJ8òºçßè1J$90f59a1b-f164-4e01-a7a5-f96d62d4a1ab
+t
+java:S6126P"2Replace this String concatenation with Text block.(ÀÅÛJ8ñºçßè1J$8fe27875-305f-4bf7-b401-f15390cab304
+m	java:S106U"+Replace this use of System.out by a logger.(ê¦Ï8òºçßè1J$b718fdfe-a4a4-4f67-a34a-ccb2bb5b93df
+r	java:S106g"+Replace this use of System.out by a logger.(·“ïûÿÿÿÿ8³çÿ„é1J$b4655b65-3ebb-42e9-a79d-46720986e9d1
+r	java:S106h"+Replace this use of System.out by a logger.(×¢½ªúÿÿÿÿ8òºçßè1J$238e824b-56f3-4cbb-9aec-2ac49363e038
+r	java:S106x"+Replace this use of System.out by a logger.(¡×½…ùÿÿÿÿ8¶çÿ„é1J$f5b731ff-335c-4a9b-957f-c2ea97b8b700
+u
+java:S6126€"2Replace this String concatenation with Text block.(Áâ‚^8¸çÿ„é1J$351b8c55-4042-409e-b7eb-a87ddd7a7120
+{
+java:S6126ƒ"2Replace this String concatenation with Text block.(µÍŸ‹şÿÿÿÿ8¸çÿ„é1J$e2c3c03f-0433-4ac3-9887-fb49f031b268
+{
+java:S6126„"2Replace this String concatenation with Text block.(©ÿŸ¿ùÿÿÿÿ8¹çÿ„é1J$4dbbdfd5-922b-49e1-ab13-199145355e4e
+u
+java:S6126Ÿ"2Replace this String concatenation with Text block.(Áâ‚^8¹çÿ„é1J$df79d658-c533-48a6-ba67-77185547154a
+d
+java:S1068"(Remove this unused "menu" private field.(î·öÁJ$93cbb762-2c8b-46a5-a27f-cfd2ee098d3b
+z
+java:S1068"2Remove this unused "orderedItemMap" private field.(“´Åóûÿÿÿÿ8õºçßè1J$a4186622-01ee-441b-9d92-b54c1b49f7fc

@@ -1,6 +1,7 @@
 package org.example;
 
 import org.example.model.Menu;
+import org.example.model.Order;
 import org.example.model.OrderedItem;
 
 import java.util.ArrayList;
@@ -11,8 +12,8 @@ import java.util.Map;
 public class Data {
     public static Map<Integer, Menu> menuMap = new HashMap<>();
     public static Map<Integer, OrderedItem> orderedItemMap = new HashMap<>();
-
-    public  static List<OrderedItem> orderList = new ArrayList<>(orderedItemMap.values());
+    public  static List<OrderedItem> orderedItemList = new ArrayList<>(orderedItemMap.values());
+    public static List<Order> orderList = new ArrayList<>();
 
     public static void initiateData(){
         Menu menu1 = new Menu()

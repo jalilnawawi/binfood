@@ -1,0 +1,58 @@
+
+†	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚ÒéüÿÿÿÿJ$7b495012-250d-49d3-ada1-05f3d8da8e85
+œ
+java:S1192i"aDefine a constant instead of duplicating this literal "===============================
+" 3 times.(Áâ‚^J$c725dd43-3a6c-471e-8797-6a29e98e9090
+˜
+java:S1192"\Define a constant instead of duplicating this literal "==========================
+" 5 times.(©´ãJ$7e45c8a7-33a2-4091-aafe-5a18f617d560
+©
+java:S1319"hThe type of "selected" should be an interface such as "List" rather than the implementation "ArrayList".(±„ßÿÿÿÿÿJ$42aefa5b-a44b-43a8-b26a-994d58432f10
+¤
+java:S1319A"hThe type of "selected" should be an interface such as "List" rather than the implementation "ArrayList".(…²¢J$064a8a60-d538-4f32-9b33-61f54748a7aa
+£
+java:S1319V"hThe type of "selected" should be an interface such as "List" rather than the implementation "ArrayList".(¼ùì>J$254fe753-8b02-4a92-acfa-3fba8e7d5f13
+©
+java:S1319e"hThe type of "selected" should be an interface such as "List" rather than the implementation "ArrayList".(åÿë…øÿÿÿÿJ$99fd7a4a-bf68-4e15-87a6-72fdebaaee7c
+V
+java:S1220""Move this file to a named package.J$cfc1261e-ab5d-4277-8fb0-85f055a9a23e
+^
+java:S2386	"Make this member "protected".(–ç®ÃøÿÿÿÿJ$a7db6d4d-b7b2-4825-991b-1f25d2b8e064
+Y
+java:S2386
+"Make this member "protected".(Ü—˜©J$dc892201-4dda-4aa1-99f9-db0ff65f686a
+k	java:S106"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿJ$b945eb7f-ec17-41ac-8a81-fdf936a49f87
+f	java:S106"+Replace this use of System.out by a logger.(©´ãJ$e7bc1067-159e-4e8a-bcfc-1a1fc826d477
+n
+java:S6126"2Replace this String concatenation with Text block.(©´ãJ$805d2742-d1b6-4503-8deb-c9c3a1f20770
+k	java:S106"+Replace this use of System.out by a logger.(¡ôÄ úÿÿÿÿJ$29d90267-0937-479d-bea3-a92ddeab5efd
+k	java:S106"+Replace this use of System.out by a logger.(Í ŠûÿÿÿÿJ$d679fefc-8d86-4c50-81a0-b0c5dd48e0f9
+f	java:S106"+Replace this use of System.out by a logger.(Ÿ‰µJ$fef48792-aedd-4643-9695-5848994b5126
+f	java:S106#"+Replace this use of System.out by a logger.(ÆÊÄÉJ$c2d8afec-0e72-447b-9885-3e4ceb49053b
+k	java:S106&"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿJ$6a7630a8-6a55-47d1-9239-c763597d91d8
+f	java:S106*"+Replace this use of System.out by a logger.(©´ãJ$869f73e1-14fe-4f73-bb10-34d6448e615f
+n
+java:S6126*"2Replace this String concatenation with Text block.(©´ãJ$d6f68fe4-c6b7-4878-8b7f-702a441f16e6
+k	java:S106."+Replace this use of System.out by a logger.(ğ·’úÿÿÿÿJ$0013f599-67d0-4bb5-8625-7530851dda3a
+k	java:S1060"+Replace this use of System.out by a logger.(Ñ²·çıÿÿÿÿJ$9a5b0e2a-84ef-40dd-9049-4fbef67c471a
+f	java:S1069"+Replace this use of System.out by a logger.(òŞŸçJ$068aa8f1-2e56-4394-9a3c-d9e04ed417b3
+f	java:S106B"+Replace this use of System.out by a logger.(©´ãJ$830003f9-9877-4d88-af84-0ac6f743e030
+n
+java:S6126B"2Replace this String concatenation with Text block.(©´ãJ$cea06bed-05e9-4749-b485-77e2901ad104
+f	java:S106G"+Replace this use of System.out by a logger.(§Ö›âJ$de26ab7d-0df7-47ab-bae7-b30d7b0b79a3
+f	java:S106N"+Replace this use of System.out by a logger.(ıâÄJ$d6f6b397-2423-4d03-b812-531b807e5cab
+k	java:S106P"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿJ$1bbdc014-53c0-4b58-8dd6-6c86c48a6ee0
+k	java:S106Q"+Replace this use of System.out by a logger.(³»Î¥ùÿÿÿÿJ$629589d7-8458-4f7b-a335-500ed52279e0
+s
+java:S6126Q"2Replace this String concatenation with Text block.(³»Î¥ùÿÿÿÿJ$2a5db44b-ab06-4372-b803-884facd881eb
+k	java:S106X"+Replace this use of System.out by a logger.(¦œ·şùÿÿÿÿJ$4388b0b1-d2bb-4f51-888a-673376b9dd6b
+m
+java:S6126i"2Replace this String concatenation with Text block.(Áâ‚^J$37d53ecb-443b-480c-ae0c-47736e2d2fff
+s
+java:S6126l"2Replace this String concatenation with Text block.(µÍŸ‹şÿÿÿÿJ$bf95693e-a045-4f82-bc4e-d4f3e1f9c4a2
+s
+java:S6126m"2Replace this String concatenation with Text block.(©ÿŸ¿ùÿÿÿÿJ$612c54ed-1303-41f2-89ad-bb5b581c9156
+m
+java:S6126z"2Replace this String concatenation with Text block.(Áâ‚^J$0423a7b7-3256-4c76-86f6-f9c57512b31c
+q
+java:S1128"0Remove this unused import 'java.time.LocalDate'.(›‘¬èıÿÿÿÿJ$55f15766-54f6-4d70-a116-0eb438735435

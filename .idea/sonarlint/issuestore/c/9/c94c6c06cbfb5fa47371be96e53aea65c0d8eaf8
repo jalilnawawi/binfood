@@ -1,0 +1,19 @@
+
+
+java:S1104"SMake menuMap a static final constant or non-public and provide accessors if needed.(ÿƒşµJ$a6e6d604-f563-4da7-8cc3-1a264bcac488
+¢
+java:S1104"ZMake orderedItemMap a static final constant or non-public and provide accessors if needed.(¤–¹ûÿÿÿÿ8±»çßè1J$596690f0-8b10-49a1-a310-8665db8b0973
+£
+java:S1104"[Make orderedItemList a static final constant or non-public and provide accessors if needed.(‘Õ¬Œûÿÿÿÿ8ñë‚…é1J$b4c80207-76f1-4793-9dbe-67b67032cc83
+
+java:S1104"UMake orderList a static final constant or non-public and provide accessors if needed.(ğ­êúÿÿÿÿ8òë‚…é1J$c2ff46ef-2160-4264-aebe-aa4ffcd5a145
+i
+java:S1444"-Make this "public static menuMap" field final(ÿƒşµJ$3c396263-05f4-4f2b-93a7-6002d0ff7344
+|
+java:S1444"4Make this "public static orderedItemMap" field final(¤–¹ûÿÿÿÿ8²»çßè1J$27b8ca51-3daa-4919-b900-2369dfe0c0f0
+}
+java:S1444"5Make this "public static orderedItemList" field final(‘Õ¬Œûÿÿÿÿ8óë‚…é1J$68681207-dd6c-4465-b47c-9ee4778ce010
+w
+java:S1444"/Make this "public static orderList" field final(ğ­êúÿÿÿÿ8óë‚…é1J$6fa3732f-f619-443c-8e25-7b3f344ef7c0
+v
+java:S1118":Add a private constructor to hide the implicit public one.(Ú¦Ì‰J$95b40a5e-921f-44fb-88b6-44bc960871e5
