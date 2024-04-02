@@ -1,0 +1,9 @@
+
+|
+java:S1488-"_Immediately return this expression instead of assigning it to the temporary variable "orderId".(Âİ¾8ïæ……é1
+O
+java:S1481"-Remove this unused "totalQty" local variable.(€Ø˜õøÿÿÿÿ8õæ……é1
+L
+java:S1481"*Remove this unused "total" local variable.(óË üÿÿÿÿ8öæ……é1
+:
+java:S2119,"Save and re-use this "Random".(¼İÅf8ùæ……é1

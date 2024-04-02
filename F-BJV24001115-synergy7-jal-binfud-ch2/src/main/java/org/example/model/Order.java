@@ -8,6 +8,7 @@ import lombok.experimental.Accessors;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Map;
 
 @Setter
 @Getter
@@ -17,5 +18,6 @@ import java.util.List;
 public class Order {
     private Long id;
     private LocalDateTime createdTime;
-    private List<OrderedItem> orderedItemList;
+//    private List<OrderedItem> orderedItemList;
+    private List<OrderedItem> orderList;
 }
