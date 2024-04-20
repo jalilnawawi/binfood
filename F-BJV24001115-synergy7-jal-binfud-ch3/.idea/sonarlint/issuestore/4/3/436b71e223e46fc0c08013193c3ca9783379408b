@@ -1,0 +1,21 @@
+
+a
+java:S11921"FDefine a constant instead of duplicating this literal "Murah" 4 times.(¬àİ”ùÿÿÿÿ
+\
+java:S11920"FDefine a constant instead of duplicating this literal "Mahal" 4 times.(°´˜è
+Q	java:S125"<This block of commented-out lines of code should be removed.(Å‘¢À
+V	java:S125G"<This block of commented-out lines of code should be removed.(ø“øñıÿÿÿÿ
+A
+java:S1068"&Remove this unused "id" private field.(şÓî«şÿÿÿÿ
+>
+java:S1068"(Remove this unused "name" private field.(Ë¥¼
+E
+java:S1068"/Remove this unused "createdDate" private field.(ÈÀû
+E
+java:S1068"/Remove this unused "updatedDate" private field.(˜´’¢
+M
+java:S1068"2Remove this unused "productionDate" private field.(ï‰×Òüÿÿÿÿ
+E
+java:S1068"/Remove this unused "expiredDate" private field.(‚§ÿ
+J
+java:S1068"/Remove this unused "description" private field.(ÇÓæâıÿÿÿÿ

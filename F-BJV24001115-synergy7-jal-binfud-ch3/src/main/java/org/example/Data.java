@@ -60,7 +60,7 @@ public class Data {
                 .setProductId(1)
                 .setProductName("Nasi Goreng")
                 .setPrice(15000)
-                .setMerchant(warteg1)
+                .setMerchant(warteg1);
 
         Product mieGoreng = new Product()
                 .setProductId(2)
@@ -96,7 +96,7 @@ public class Data {
                 .setProductId(1)
                 .setProductName("Nasi Goreng")
                 .setPrice(15000)
-                .setMerchant(warteg2)
+                .setMerchant(warteg2);
 
         Product mieGoreng2 = new Product()
                 .setProductId(2)

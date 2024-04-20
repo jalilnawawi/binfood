@@ -1,0 +1,16 @@
+
+†	java:S112 "FDefine and throw a dedicated exception instead of using a generic one.(¯åÕøÿÿÿÿJ$43da82b7-badf-47ac-9abb-49ce95d68b4a
+†	java:S1127"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚ÒéüÿÿÿÿJ$bf3acfd9-6193-4a97-8e1a-9ec519068e11
+†	java:S1129"FDefine and throw a dedicated exception instead of using a generic one.(¯åÕøÿÿÿÿJ$41a2eddc-2ff8-484e-a5b2-373367570b7c
+‰
+java:S1192"NDefine a constant instead of duplicating this literal "testerror.txt" 3 times.(¨”AJ$3c8fe887-bf41-4d2a-b7f5-2da04ea4e049
+†
+java:S2095?"EUse try-with-resources or close this "Scanner" in a "finally" clause.(ŠïéÎúÿÿÿÿJ$bcee0fbe-e0c2-4b31-951d-24d0d2e00eca
+|	java:S125"<This block of commented-out lines of code should be removed.(ÄŸıƒùÿÿÿÿJ$5d7f59f1-1b2e-44db-aee5-840e25f94419
+|	java:S125"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿJ$48390751-e7cb-4110-8f34-3e8d6a876e8f
+f	java:S106"+Replace this use of System.out by a logger.(¼ú©¦J$cce4d5a3-b721-4395-820b-8913866c3fab
+w	java:S125""<This block of commented-out lines of code should be removed.(æÊøJ$2572ad7a-8a81-49ef-a1ea-05119bdddf9c
+k
+java:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿJ$0c04cd4a-bd35-42e1-88f3-82eb5b5a779c
+f	java:S1064"+Replace this use of System.out by a logger.(¼ú©¦J$dbe552ca-7f50-40c5-baa7-98d6113c378b
+f	java:S106C"+Replace this use of System.out by a logger.(¼ú©¦J$c5b9a437-36ee-4583-80d5-dbb592e056e8
