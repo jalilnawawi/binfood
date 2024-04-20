@@ -14,5 +14,4 @@ public class Product {
     private String productName;
     private int price;
     private Merchant merchant;
-    private ProductVariant productVariant;
 }
