@@ -1,17 +1,16 @@
 
 °
-java:S1319"mThe type of "productMap" should be an interface such as "SortedMap" rather than the implementation "TreeMap".(¢º½‘8ä–´ï1J$72c0cb5a-63bf-461c-9d00-65618ffdf763
-m	java:S106"+Replace this use of System.out by a logger.(ÆÀûı8ğØ±ï1J$5da0cdd3-7a9b-4425-8413-1fd74be7e189
+java:S1319"mThe type of "productMap" should be an interface such as "SortedMap" rather than the implementation "TreeMap".(¢º½‘8ä–´ï1J$3a89447a-7174-4dca-9432-ab96a93dc807
+m	java:S106"+Replace this use of System.out by a logger.(ÆÀûı8ğØ±ï1J$5a2a7e01-c532-4477-a6e6-b01ca47444ac
 z
-java:S6126"2Replace this String concatenation with Text block.(¿İ±Öùÿÿÿÿ8îØãï1J$3ab51aa6-3c47-4fad-802b-f823edea27b1
-~	java:S125"<This block of commented-out lines of code should be removed.(ø§ñ8òØ±ï1J$25e430ed-829b-41ea-969b-ff5874762e0b
-m	java:S106"+Replace this use of System.out by a logger.(ÆÀûı8óØ±ï1J$a055f9e9-3572-4d0d-97ee-ff5bca887f97
-m	java:S106!"+Replace this use of System.out by a logger.(ÆÀûı8ôØ±ï1J$29807425-c975-4343-a5d7-dd60108e21ee
+java:S6126"2Replace this String concatenation with Text block.(¿İ±Öùÿÿÿÿ8îØãï1J$504c1355-39bd-4f0f-a0cd-c9d59287134c
+m	java:S106"+Replace this use of System.out by a logger.(ÆÀûı8óØ±ï1J$75d454c4-41d8-4951-8232-b6cf741017eb
+m	java:S106"+Replace this use of System.out by a logger.(ÆÀûı8ôØ±ï1J$81cebfe9-b52e-4c76-97a6-245cbdb4b179
 z
-java:S1128"7Remove this unused import 'org.example.model.Merchant'.(é’°†8ğ–´ï1J$21267fe2-c95e-4850-baed-ad181ed5589e
+java:S1128"7Remove this unused import 'org.example.model.Merchant'.(é’°†8ğ–´ï1J$c87a3a69-bb82-46c9-9720-aa49eb37c1e1
 s
-java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ğ–´ï1J$69246a55-1085-4aa3-a0c5-3f2c02afc3b4
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ğ–´ï1J$1a3cca2a-e2fe-47db-a411-4fe5b1ff62a3
 r
-java:S1128"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8ñ–´ï1J$0dfc8a20-bd91-407d-83ff-257ebcadf825
+java:S1128"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8ñ–´ï1J$f4a0ae3e-4f18-43a8-b0d5-96bd792ca45c
 w
-java:S1128"/Remove this unused import 'java.util.Optional'.(¨˜ëİüÿÿÿÿ8ñ–´ï1J$657561c8-e7ec-42d4-a619-c50add30f5df
+java:S1128"/Remove this unused import 'java.util.Optional'.(¨˜ëİüÿÿÿÿ8ñ–´ï1J$436ad3e9-e167-418d-809f-d608adfeab08

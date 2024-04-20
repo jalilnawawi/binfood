@@ -1,21 +1,20 @@
 
-	java:S112µ"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¹ûÃÖï1J$420a4028-8d35-4473-8d7d-613f0dfba2ac
+	java:S112±"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¹ûÃÖï1J$0dfffad5-12c1-44a3-914d-b3e89fb83d20
 ¥
-java:S1192˜"aDefine a constant instead of duplicating this literal "===============================
-" 3 times.(„¦½š8¼ûÃÖï1J$ceaa24d9-1599-48e8-ab1d-25d9ce70b6a8
+java:S1192”"aDefine a constant instead of duplicating this literal "===============================
+" 3 times.(„¦½š8¼ûÃÖï1J$1fe42b24-9787-48a4-ba97-2434cabc86d8
 u
-java:S6126-"2Replace this String concatenation with Text block.(ô£‘§8áûÃÖï1J$b3264a42-05d2-49db-be9d-198556bd38e2
+java:S6126-"2Replace this String concatenation with Text block.(ô£‘§8áûÃÖï1J$02f17e4d-c393-4916-9bcc-75b4f194cebb
 w
-java:S2864L"4Iterate over the "entrySet" instead of the "keySet".(ÛÚ”â8äûÃÖï1J$7e420a67-db95-42a0-8b64-69a870f88f49
+java:S2864L"4Iterate over the "entrySet" instead of the "keySet".(ÛÚ”â8äûÃÖï1J$011c3997-b10e-4791-b6dc-615b2fcbc732
 w
-java:S2864U"4Iterate over the "entrySet" instead of the "keySet".(ÛÚ”â8æûÃÖï1J$43eccaca-b9f0-42c9-bdd9-202211b669ba
-m	java:S106a"+Replace this use of System.out by a logger.(¢Š÷Ş8èûÃÖï1J$c5b7f875-3a6f-4a30-ad96-406d36532a50
-m	java:S106h"+Replace this use of System.out by a logger.(©ŒÈÏ8èûÃÖï1J$bdefa203-b864-4fdb-ae55-26174724d66d
-m	java:S106i"+Replace this use of System.out by a logger.(Âı×¹8èûÃÖï1J$41ea5522-cb77-44e7-a350-b3fbe33096a1
-r	java:S106w"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8ëûÃÖï1J$732b13ed-3dda-429e-b6f9-5e73d13c9fbf
-m	java:S106"+Replace this use of System.out by a logger.(œ»³•8ëûÃÖï1J$c5d387ec-6ff6-48d5-9345-533a60f52448
-s	java:S106‡"+Replace this use of System.out by a logger.(¡×½…ùÿÿÿÿ8íûÃÖï1J$14f55390-8ae7-430d-aee9-3dc9605bafe6
+java:S2864U"4Iterate over the "entrySet" instead of the "keySet".(ÛÚ”â8æûÃÖï1J$95c4cebe-bbbe-4f27-85bb-18c5619823de
+m	java:S106d"+Replace this use of System.out by a logger.(©ŒÈÏ8ëûÃÖï1J$e09d2de2-f1f7-4507-931a-084dbf7b20f7
+m	java:S106e"+Replace this use of System.out by a logger.(Âı×¹8íûÃÖï1J$454fe982-ba3e-401d-b75c-eae99d918d2f
+r	java:S106s"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8ëıíßï1J$d1477e8a-e09f-4f1b-91c2-89b058bd9a3a
+m	java:S106{"+Replace this use of System.out by a logger.(œ»³•8ºÖÔàï1J$35685b67-9167-4452-a715-5b59c86eb3c8
+s	java:S106ƒ"+Replace this use of System.out by a logger.(¡×½…ùÿÿÿÿ8×äÜàï1J$9b02b100-e33f-4311-80dc-9e196005cf23
 x
-java:S2864Œ"4Iterate over the "entrySet" instead of the "keySet".(éÀÇü8îûÃÖï1J$e113c59f-8b7d-4879-a591-69f886abcf3f
+java:S2864ˆ"4Iterate over the "entrySet" instead of the "keySet".(éÀÇü8îûÃÖï1J$45575148-58f7-4aee-8082-694e37312420
 x
-java:S2864"4Iterate over the "entrySet" instead of the "keySet".(ÛÚ”â8ïûÃÖï1J$2aab49ad-4b61-42cb-ad50-fcf63c7bbb7d
+java:S2864š"4Iterate over the "entrySet" instead of the "keySet".(ÛÚ”â8ïûÃÖï1J$c6e68673-4288-423b-b5db-0b418c40f718

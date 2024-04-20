@@ -1,5 +1,6 @@
 package org.example.view;
 
+import org.example.Data;
 import org.example.controller.OrderController;
 import org.example.model.OrderDetail;
 import org.example.service.OrderService;
@@ -14,6 +15,7 @@ import java.util.Map;
 import static org.example.Data.orderDetailMap;
 
 public class OrderView {
+    Map<String, OrderDetail> orderDetailMap = Data.orderDetailMap;
     public void displaySelectProduct(){
         System.out.print("Select your Product => ");
     }
@@ -32,6 +34,15 @@ public class OrderView {
         );
     }
 
+    public void displayConfirmPay(){
+        orderDetailMap.forEach((key, value) -> System.out.println(
+                value.getProduct().getProductName() + " | "
+                        + value.getQuantity() + " | "
+                        + value.getProduct().getPrice()
+        ));
+
+    }
+
     public void displayConfirmPaySelection(){
         System.out.println(
                 "1. " + "Konfirmasi dan Bayar\n"
@@ -43,21 +54,6 @@ public class OrderView {
         );
     }
 
-    public void displayOutsideExistingMenu(){
-        System.out.println(
-                "============================\n"
-                + "Mohon masukkan input\n"
-                + "pilihan anda\n"
-                + "============================\n"
-        );
-        System.out.println(
-                "(Y) untuk lanjut\n"
-                + "(n) untuk keluar"
-        );
-        System.out.print(
-                "Select option => "
-        );
-    }
     public void displayOutsideExistingOption(){
         System.out.println(
                 "============================\n"

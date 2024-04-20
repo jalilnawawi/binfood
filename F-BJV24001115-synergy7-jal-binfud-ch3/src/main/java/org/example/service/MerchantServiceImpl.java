@@ -17,6 +17,14 @@ public class MerchantServiceImpl implements MerchantService{
 
     @Override
     public int selectMerchantById(int merchantId) {
+        if (merchantId == 0 || merchantId > 2){
+            throw new NullRequestException(
+                    "\n============================\n"
+                            + "Merchant tidak ditemukan!\n"
+                            + "============================\n"
+            );
+        }
+
         return merchantId;
     }
 }

@@ -16,9 +16,6 @@ public class ProductView {
                 + "Selamat datang di BinarFud\n"
                 + "================================"
         );
-//        for (Integer key : productMap.keySet()){
-//            displayProduct(productMap.get(key));
-//        }
 
         productMap.forEach((key,value) -> displayProduct(productMap.get(key)));
 

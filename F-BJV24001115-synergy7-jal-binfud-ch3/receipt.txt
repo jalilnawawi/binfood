@@ -1,5 +1,5 @@
-OrderId = 746a84d4-881f-401e-823d-0561d445fb4e
-Order Time = 2024-04-20T16:24:24.303196600
+OrderId = b802136c-e467-4cae-9d13-4193a532f57e
+Order Time = 2024-04-20T22:20:12.460133200
 ===============================
 BinarFud
 ===============================
@@ -8,10 +8,10 @@ Terima kasih sudah memesan di BinarFud
 
 Dibawah ini adalah pesanan anda:
 
-Mie Goreng			2	13000.0
-Nasi Goreng			1	15000.0
+Nasi + Ayam			2	18000.0
+Nasi + Ayam			4	18000.0
 --------------------------------
-Total 				3	41000.0
+Total 				6	108000.0
 Pembayaran : BinarCash
 
 ===============================

@@ -1,7 +1,14 @@
 
-—
-java:S1192"TDefine a constant instead of duplicating this literal "Selamat berbelanja " 3 times.(³ÓÅÉ8š‘æ’ï1J$40c15f8f-edb9-485f-b6c2-db25853843ba
-m	java:S106"+Replace this use of System.out by a logger.(³ÓÅÉ8Åã’ï1J$a536b0d8-607e-4e0f-870e-5a13b3f32f2d
-m	java:S106"+Replace this use of System.out by a logger.(³ÓÅÉ8©‘æ’ï1J$82cc3425-f561-4241-8d32-0becf0e29349
-m	java:S106"+Replace this use of System.out by a logger.(³ÓÅÉ8©‘æ’ï1J$9da8f071-d9a3-4c9b-be51-015eb7078226
-r	java:S106"+Replace this use of System.out by a logger.(Í…úøÿÿÿÿ8©‘æ’ï1J$3d33fc5a-7bf3-4872-a78e-038ee9c68b23
+œ
+java:S1192"TDefine a constant instead of duplicating this literal "Selamat berbelanja " 3 times.(µòøøÿÿÿÿ8š‘æ’ï1J$ca524092-0bbe-42dc-962b-4cee2a46390c
+r	java:S106"+Replace this use of System.out by a logger.(µòøøÿÿÿÿ8Åã’ï1J$7d718bf9-6137-4c34-a45d-87116d248227
+r	java:S106"+Replace this use of System.out by a logger.(µòøøÿÿÿÿ8©‘æ’ï1J$a2a1cb9c-e798-4f75-881e-9071f4fb589f
+r	java:S106"+Replace this use of System.out by a logger.(µòøøÿÿÿÿ8©‘æ’ï1J$664d275f-ee04-4090-8571-d657b8f1bf49
+u
+java:S6126"2Replace this String concatenation with Text block.(ô£‘§8»¥Şï1J$3da5cd8e-e737-46eb-a786-d2a57338b311
+u
+java:S1128"-Remove this unused import 'org.example.Data'.(íŠ½±ıÿÿÿÿ8ê¬ñİï1J$42e9c139-ffd4-420d-813a-831b67142869
+w
+java:S1128"4Remove this unused import 'org.example.model.Users'.(«…³¬8ê¬ñİï1J$58cb46ee-a5fe-48c1-b469-983fff4cd202
+s
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ê¬ñİï1J$3dc38e5c-77e5-4ed4-8200-bfcdaf6b92b6

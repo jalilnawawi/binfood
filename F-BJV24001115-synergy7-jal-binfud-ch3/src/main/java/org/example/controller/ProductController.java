@@ -16,11 +16,6 @@ import java.util.stream.Stream;
 public class ProductController {
     public void mainMenu(){
         Data.initiateProduct();
-//        ProductService productService = new ProductServiceImpl();
-//        TreeMap<Integer, Product> productMap = productService.getProduct();
-//
-//        ProductView productView = new ProductView();
-//        productView.displayProduct(productMap);
 
         Supplier<TreeMap<Integer, Product>> productSupplier = () -> Data.productMap;
         ProductView productView = new ProductView();
