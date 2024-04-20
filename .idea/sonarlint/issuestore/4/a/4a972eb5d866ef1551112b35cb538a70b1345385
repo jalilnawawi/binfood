@@ -1,26 +1,17 @@
 
-m
-java:S1192*"RDefine a constant instead of duplicating this literal "Select option => " 3 times.(–šÂêüÿÿÿÿ
-t
-java:S11920"^Define a constant instead of duplicating this literal "============================
-" 4 times.(™º…ä
-E	java:S106"+Replace this use of System.out by a logger.(¶ÒæÅüÿÿÿÿ
-E	java:S106"+Replace this use of System.out by a logger.(Û¬ñÐÿÿÿÿÿ
-E	java:S106"+Replace this use of System.out by a logger.(ªÓ¼áþÿÿÿÿ
-?	java:S106"+Replace this use of System.out by a logger.(ÀÅÛJ
+E	java:S106"+Replace this use of System.out by a logger.(¶ÒæÅüÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(Û¬ñÐÿÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(ªÓ¼áþÿÿÿÿ
+?	java:S106"+Replace this use of System.out by a logger.(ÀÅÛJ
 G
-java:S6126"2Replace this String concatenation with Text block.(ÀÅÛJ
-@	java:S106$"+Replace this use of System.out by a logger.(ÆÀûý
-M
-java:S6126%"2Replace this String concatenation with Text block.(ú½Ãþÿÿÿÿ
-E	java:S106)"+Replace this use of System.out by a logger.(Û¬ñÐÿÿÿÿÿ
+java:S6126"2Replace this String concatenation with Text block.(ÀÅÛJ
+G	java:S106&"+Replace this use of System.out by a logger.(¢Š÷Þ8Ý–äàï1
 @	java:S106/"+Replace this use of System.out by a logger.(ÆÀûý
+M
+java:S61260"2Replace this String concatenation with Text block.(ú½Ãþÿÿÿÿ
+E	java:S1064"+Replace this use of System.out by a logger.(Û¬ñÐÿÿÿÿÿ
+@	java:S106:"+Replace this use of System.out by a logger.(ÆÀûý
 H
-java:S61260"2Replace this String concatenation with Text block.(™º…ä
-@	java:S1065"+Replace this use of System.out by a logger.(ÆÀûý
-E	java:S1069"+Replace this use of System.out by a logger.(Û¬ñÐÿÿÿÿÿ
-@	java:S106>"+Replace this use of System.out by a logger.(ÆÀûý
-H
-java:S6126?"2Replace this String concatenation with Text block.(™º…ä
-@	java:S106D"+Replace this use of System.out by a logger.(ÆÀûý
-E	java:S106H"+Replace this use of System.out by a logger.(Û¬ñÐÿÿÿÿÿ
+java:S6126;"2Replace this String concatenation with Text block.(™º…ä
+@	java:S106@"+Replace this use of System.out by a logger.(ÆÀûý
+E	java:S106D"+Replace this use of System.out by a logger.(Û¬ñÐÿÿÿÿÿ

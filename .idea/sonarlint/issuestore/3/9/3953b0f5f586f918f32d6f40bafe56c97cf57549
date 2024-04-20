@@ -1,7 +1,8 @@
 
-j
-java:S1192"TDefine a constant instead of duplicating this literal "Selamat berbelanja " 3 times.(³ÓÅÉ
-@	java:S106"+Replace this use of System.out by a logger.(³ÓÅÉ
-@	java:S106"+Replace this use of System.out by a logger.(³ÓÅÉ
-@	java:S106"+Replace this use of System.out by a logger.(³ÓÅÉ
-E	java:S106"+Replace this use of System.out by a logger.(Í…úøÿÿÿÿ
+v
+java:S1192"TDefine a constant instead of duplicating this literal "Selamat berbelanja " 3 times.(µòøøÿÿÿÿ8¥–äàï1
+L	java:S106"+Replace this use of System.out by a logger.(µòøøÿÿÿÿ8«–äàï1
+L	java:S106"+Replace this use of System.out by a logger.(µòøøÿÿÿÿ8«–äàï1
+L	java:S106"+Replace this use of System.out by a logger.(µòøøÿÿÿÿ8«–äàï1
+O
+java:S6126"2Replace this String concatenation with Text block.(ô£‘§8«–äàï1
