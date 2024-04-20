@@ -1,32 +1,32 @@
 
-	java:S1125"FDefine and throw a dedicated exception instead of using a generic one.(¯åÕøÿÿÿÿ8œçÿ„é1J$f9c0a2cd-a86d-41fe-aef8-7e34775c6a16
-	java:S112¤"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8çÿ„é1J$6e269005-978a-4812-a15f-c575396eef49
+	java:S1125"FDefine and throw a dedicated exception instead of using a generic one.(¯åÕøÿÿÿÿ8œçÿ„é1J$bb2dc3f1-05c0-46af-ae9c-ff0edf4e77ee
+	java:S112¤"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8çÿ„é1J$8ecf119a-e6c3-4e04-862f-a237a6a9ba3e
 ¤
 java:S1192€"aDefine a constant instead of duplicating this literal "===============================
-" 3 times.(Áâ‚^8¡çÿ„é1J$a45911a1-da5f-4ba0-8f1d-9119d11f5759
-r	java:S1062"+Replace this use of System.out by a logger.(š§‰Ÿùÿÿÿÿ8«çÿ„é1J$ed0076c9-a2a6-42b7-b634-f0ad31a84a06
+" 3 times.(Áâ‚^8¡çÿ„é1J$e98268be-b43e-4246-aab8-cb3a05d584d2
+r	java:S1062"+Replace this use of System.out by a logger.(š§‰Ÿùÿÿÿÿ8«çÿ„é1J$06f9ef5e-3c86-401f-8232-a587f2054a72
 z
-java:S61262"2Replace this String concatenation with Text block.(š§‰Ÿùÿÿÿÿ8¬çÿ„é1J$306f7aec-cc19-4037-b80c-3c4c261bc2a2
-m	java:S106F"+Replace this use of System.out by a logger.(™²“õ8ïºçßè1J$f1c04873-81b1-4a2a-aa2a-b0fa0d3744fa
-r	java:S106G"+Replace this use of System.out by a logger.(¼×¯ğúÿÿÿÿ8ïºçßè1J$1391d86a-a0f2-4254-b5b0-f73bff7fea71
-m	java:S106H"+Replace this use of System.out by a logger.(™²“õ8ğºçßè1J$c0dbb44e-7cc8-4064-a768-578aed137373
-r	java:S106O"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8ğºçßè1J$fcf0cfbd-c94f-4bb8-9269-57dab4bb2f4b
-l	java:S106P"+Replace this use of System.out by a logger.(ÀÅÛJ8òºçßè1J$3b5350f6-3b82-4188-9d50-0fd4a0ad04d1
+java:S61262"2Replace this String concatenation with Text block.(š§‰Ÿùÿÿÿÿ8¬çÿ„é1J$11711147-c8f3-41c7-8e3a-b4b31604cd36
+m	java:S106F"+Replace this use of System.out by a logger.(™²“õ8ïºçßè1J$a72987c0-d839-4012-b746-068135b5be99
+r	java:S106G"+Replace this use of System.out by a logger.(¼×¯ğúÿÿÿÿ8ïºçßè1J$81357e0a-6316-4021-b3bd-900d26a2eea6
+m	java:S106H"+Replace this use of System.out by a logger.(™²“õ8ğºçßè1J$9df571d2-5a67-4ab3-ae55-0bef06b44312
+r	java:S106O"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8ğºçßè1J$70c2e6d2-5f04-41bb-8614-2a86b40948ad
+l	java:S106P"+Replace this use of System.out by a logger.(ÀÅÛJ8òºçßè1J$ce76e328-c6da-472b-b4b0-fc7143e4090b
 t
-java:S6126P"2Replace this String concatenation with Text block.(ÀÅÛJ8ñºçßè1J$e362b6c6-1617-4227-9aea-8d57cd60a584
-m	java:S106U"+Replace this use of System.out by a logger.(ê¦Ï8òºçßè1J$1222f437-d2cc-4623-80d8-3cef9faa292b
-r	java:S106g"+Replace this use of System.out by a logger.(·“ïûÿÿÿÿ8³çÿ„é1J$905481f5-1f10-405a-aab7-d70ab1798363
-r	java:S106h"+Replace this use of System.out by a logger.(×¢½ªúÿÿÿÿ8òºçßè1J$f6c829f8-7f7d-443f-9b34-123e314a161c
-r	java:S106x"+Replace this use of System.out by a logger.(¡×½…ùÿÿÿÿ8¶çÿ„é1J$403ddbb2-9f9f-4275-8ce7-5519c281ddf5
+java:S6126P"2Replace this String concatenation with Text block.(ÀÅÛJ8ñºçßè1J$2d446654-4e91-4def-8d15-34c58009d6c4
+m	java:S106U"+Replace this use of System.out by a logger.(ê¦Ï8òºçßè1J$6b25d927-e033-456a-a87b-7131d2622da7
+r	java:S106g"+Replace this use of System.out by a logger.(·“ïûÿÿÿÿ8³çÿ„é1J$02d5d5df-5b1a-447a-9415-b102199c9211
+r	java:S106h"+Replace this use of System.out by a logger.(×¢½ªúÿÿÿÿ8òºçßè1J$3eefd204-4bd4-4975-86bc-0d9c415dec23
+r	java:S106x"+Replace this use of System.out by a logger.(¡×½…ùÿÿÿÿ8¶çÿ„é1J$0e84e755-13c5-4e4b-82fe-88c4ef67ae4f
 u
-java:S6126€"2Replace this String concatenation with Text block.(Áâ‚^8¸çÿ„é1J$ea3aab27-5e0b-44b8-940c-67f6ed845b6e
+java:S6126€"2Replace this String concatenation with Text block.(Áâ‚^8¸çÿ„é1J$aa8c2fd6-3445-4016-8c68-b95f529d53f7
 {
-java:S6126ƒ"2Replace this String concatenation with Text block.(µÍŸ‹şÿÿÿÿ8¸çÿ„é1J$fac8589a-5e8c-4de5-9aac-4da5fdcf6d9c
+java:S6126ƒ"2Replace this String concatenation with Text block.(µÍŸ‹şÿÿÿÿ8¸çÿ„é1J$e0c8ace4-0c87-48c0-9f4f-c2139286c571
 {
-java:S6126„"2Replace this String concatenation with Text block.(©ÿŸ¿ùÿÿÿÿ8¹çÿ„é1J$3f27e9ff-bf93-4812-8d9a-6695c72c0ab9
+java:S6126„"2Replace this String concatenation with Text block.(©ÿŸ¿ùÿÿÿÿ8¹çÿ„é1J$87245d74-234d-4583-a1ec-e8a25d3a802a
 u
-java:S6126Ÿ"2Replace this String concatenation with Text block.(Áâ‚^8¹çÿ„é1J$8b5c74a1-0b2f-4508-9b53-5faee2840479
+java:S6126Ÿ"2Replace this String concatenation with Text block.(Áâ‚^8¹çÿ„é1J$dd8657b4-7213-4672-aaf7-6086b417267d
 d
-java:S1068"(Remove this unused "menu" private field.(î·öÁJ$d6697c65-b197-4875-9176-eced93e427ea
+java:S1068"(Remove this unused "menu" private field.(î·öÁJ$7a0299a9-682d-4b9f-9f87-48318bb8e13d
 z
-java:S1068"2Remove this unused "orderedItemMap" private field.(“´Åóûÿÿÿÿ8õºçßè1J$d293f109-fc71-412e-8f0c-35634ec46e37
+java:S1068"2Remove this unused "orderedItemMap" private field.(“´Åóûÿÿÿÿ8õºçßè1J$6c5d4aeb-e1c0-42e3-8fdf-e96670d20b44
