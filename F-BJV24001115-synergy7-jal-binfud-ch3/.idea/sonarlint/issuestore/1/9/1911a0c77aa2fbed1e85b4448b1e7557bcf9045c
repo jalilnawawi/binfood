@@ -1,6 +1,0 @@
-
-r	java:S106"+Replace this use of System.out by a logger.(Ýú‚ûúÿÿÿÿ8¡Ýê”ï1J$083ccb82-fa6e-47a0-92fb-8f1314a2beac
-r	java:S106"+Replace this use of System.out by a logger.(ëê¼®ýÿÿÿÿ8¢Ýê”ï1J$9466b953-3fc8-4899-992c-4f1bacce83d5
-r	java:S106"+Replace this use of System.out by a logger.(¯Çª®úÿÿÿÿ8¢Ýê”ï1J$75c9e360-2124-4f49-a90c-efa05f1d850d
-w
-java:S1128"/Remove this unused import 'java.util.Optional'.(¨˜ëÝüÿÿÿÿ8¤Ýê”ï1J$1f2d4636-d5aa-4552-9548-d47d1f33dea9

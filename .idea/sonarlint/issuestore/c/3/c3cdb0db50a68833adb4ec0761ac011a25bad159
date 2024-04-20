@@ -1,9 +1,0 @@
-
-ƒ
-java:S1319"mThe type of "productMap" should be an interface such as "SortedMap" rather than the implementation "TreeMap".(¢º½‘
-@	java:S106"+Replace this use of System.out by a logger.(ÆÀûý
-M
-java:S6126"2Replace this String concatenation with Text block.(¿Ý±Öùÿÿÿÿ
-Q	java:S125"<This block of commented-out lines of code should be removed.(ø§ñ
-@	java:S106"+Replace this use of System.out by a logger.(ÆÀûý
-@	java:S106!"+Replace this use of System.out by a logger.(ÆÀûý
