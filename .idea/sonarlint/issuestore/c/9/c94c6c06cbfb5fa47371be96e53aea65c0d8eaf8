@@ -1,19 +1,19 @@
 
 
-java:S1104"SMake menuMap a static final constant or non-public and provide accessors if needed.(ÿƒşµJ$a6e6d604-f563-4da7-8cc3-1a264bcac488
+java:S1104"SMake menuMap a static final constant or non-public and provide accessors if needed.(ÿƒşµJ$9148f594-affe-442f-a49b-ec44f2ddf225
 ¢
-java:S1104"ZMake orderedItemMap a static final constant or non-public and provide accessors if needed.(¤–¹ûÿÿÿÿ8±»çßè1J$596690f0-8b10-49a1-a310-8665db8b0973
+java:S1104"ZMake orderedItemMap a static final constant or non-public and provide accessors if needed.(¤–¹ûÿÿÿÿ8±»çßè1J$f7538044-23d5-4985-9b1e-60c2ab049410
 £
-java:S1104"[Make orderedItemList a static final constant or non-public and provide accessors if needed.(‘Õ¬Œûÿÿÿÿ8ñë‚…é1J$b4c80207-76f1-4793-9dbe-67b67032cc83
+java:S1104"[Make orderedItemList a static final constant or non-public and provide accessors if needed.(‘Õ¬Œûÿÿÿÿ8ñë‚…é1J$3f97c962-88b9-42a9-81b5-98b48b11a941
 
-java:S1104"UMake orderList a static final constant or non-public and provide accessors if needed.(ğ­êúÿÿÿÿ8òë‚…é1J$c2ff46ef-2160-4264-aebe-aa4ffcd5a145
+java:S1104"UMake orderList a static final constant or non-public and provide accessors if needed.(ğ­êúÿÿÿÿ8òë‚…é1J$a4dc40f4-0322-44d0-a9d5-4978f8414bd3
 i
-java:S1444"-Make this "public static menuMap" field final(ÿƒşµJ$3c396263-05f4-4f2b-93a7-6002d0ff7344
+java:S1444"-Make this "public static menuMap" field final(ÿƒşµJ$5ee55240-e53e-4c82-8e2d-2164a7688ede
 |
-java:S1444"4Make this "public static orderedItemMap" field final(¤–¹ûÿÿÿÿ8²»çßè1J$27b8ca51-3daa-4919-b900-2369dfe0c0f0
+java:S1444"4Make this "public static orderedItemMap" field final(¤–¹ûÿÿÿÿ8²»çßè1J$da4b0f40-4c5f-4d5f-b8b9-e90b659a046f
 }
-java:S1444"5Make this "public static orderedItemList" field final(‘Õ¬Œûÿÿÿÿ8óë‚…é1J$68681207-dd6c-4465-b47c-9ee4778ce010
+java:S1444"5Make this "public static orderedItemList" field final(‘Õ¬Œûÿÿÿÿ8óë‚…é1J$900d059e-5ae6-4901-bb44-4e573dcef633
 w
-java:S1444"/Make this "public static orderList" field final(ğ­êúÿÿÿÿ8óë‚…é1J$6fa3732f-f619-443c-8e25-7b3f344ef7c0
+java:S1444"/Make this "public static orderList" field final(ğ­êúÿÿÿÿ8óë‚…é1J$9b3da96b-6c15-4d4a-95ad-2a54e9930df0
 v
-java:S1118":Add a private constructor to hide the implicit public one.(Ú¦Ì‰J$95b40a5e-921f-44fb-88b6-44bc960871e5
+java:S1118":Add a private constructor to hide the implicit public one.(Ú¦Ì‰J$f577f2fb-4a24-416e-a361-de54a6cae00d

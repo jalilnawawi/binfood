@@ -1,0 +1,39 @@
+
+°
+java:S1319
+"mThe type of "productMap" should be an interface such as "SortedMap" rather than the implementation "TreeMap".(²ëî8®¬ “ï1J$a2aad783-f9c7-4f07-8b88-bb9a7793ffe1
+˜
+java:S1104"UMake usersList a static final constant or non-public and provide accessors if needed.(ñô¯È8®¬ “ï1J$29dd3ae0-2ab4-425c-8599-5fa0658143a5
+ 
+java:S1104	"XMake merchantList a static final constant or non-public and provide accessors if needed.(¶øÓşÿÿÿÿ8¯¬ “ï1J$fbd61a5b-cb44-426e-a3fe-5ab557269a7a
+™
+java:S1104
+"VMake productMap a static final constant or non-public and provide accessors if needed.(²ëî8¯¬ “ï1J$1873b05c-9880-4454-b3c5-1ac73a307233
+œ
+java:S1104"TMake orderMap a static final constant or non-public and provide accessors if needed.(³ùÎøşÿÿÿÿ8¯¬ “ï1J$8f821790-ffc0-4d10-b848-10b48adaf599
+
+java:S1104"ZMake orderDetailMap a static final constant or non-public and provide accessors if needed.(áÄ¬Š8¯¬ “ï1J$a9d7bd1b-165d-4bca-a7f1-76258541b8bb
+r
+java:S1444"/Make this "public static usersList" field final(ñô¯È8¯¬ “ï1J$ded46205-8132-4f5b-8544-dfd2b282ec78
+z
+java:S1444	"2Make this "public static merchantList" field final(¶øÓşÿÿÿÿ8¯¬ “ï1J$9c2b9397-988d-46f4-bff6-6a8467b42ad3
+s
+java:S1444
+"0Make this "public static productMap" field final(²ëî8¯¬ “ï1J$998022ac-d44c-4201-bbbc-2720727915a1
+v
+java:S1444".Make this "public static orderMap" field final(³ùÎøşÿÿÿÿ8¯¬ “ï1J$b100459d-f0e4-4c49-92cd-3145675d2ff9
+w
+java:S1444"4Make this "public static orderDetailMap" field final(áÄ¬Š8¯¬ “ï1J$ec0af402-6584-475b-9ba9-5e3b09bd0bdf
+`
+java:S2386"Make this member "protected".(ñô¯È8µ¬ “ï1J$3c6960f9-ba6a-4136-8a7a-c9a82946f5fe
+e
+java:S2386	"Make this member "protected".(¶øÓşÿÿÿÿ8úç—”ï1J$51a98b67-d7e8-4446-9059-d43a67a29d57
+`
+java:S2386
+"Make this member "protected".(²ëî8µ¬ “ï1J$0bc3e385-9137-4b4f-991c-4860e7990c6a
+e
+java:S2386"Make this member "protected".(³ùÎøşÿÿÿÿ8µ¬ “ï1J$c29428ea-8851-4428-b246-e4540959af1a
+`
+java:S2386"Make this member "protected".(áÄ¬Š8µ¬ “ï1J$1f4e6c88-fb52-443b-aeb2-76dbd9df52e0
+}
+java:S1118":Add a private constructor to hide the implicit public one.(Ú¦Ì‰8¹¬ “ï1J$ceb3bcca-6b27-4e11-ac91-2faf14c3e26b
