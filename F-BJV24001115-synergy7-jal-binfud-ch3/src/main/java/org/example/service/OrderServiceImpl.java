@@ -93,12 +93,8 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public void confirmPay() {
         orderView.displayConfirmPayHeader();
+        orderView.displayConfirmPay();
 
-        orderDetailMap.forEach((key, value) -> System.out.println(
-                value.getProduct().getProductName() + " | "
-                + value.getQuantity() + " | "
-                + value.getProduct().getPrice()
-        ));
         int totalQty = totalQty();
         int totalPrice = totalPrice();
         System.out.println("-----------------------------+");

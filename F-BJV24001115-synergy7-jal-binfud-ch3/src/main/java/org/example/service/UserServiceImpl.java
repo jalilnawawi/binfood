@@ -6,20 +6,22 @@ import org.example.model.Users;
 import java.util.List;
 
 public class UserServiceImpl implements UserService{
-    List<Users> usersList = Data.usersList;
 
     @Override
     public String loginByUserName(String inputUserName) {
 
         if (inputUserName.equalsIgnoreCase("user1")){
-            System.out.println("Selamat berbelanja " + inputUserName);
+            System.out.println("Selamat berbelanja " + inputUserName + "\n");
         } else if (inputUserName.equalsIgnoreCase("user2")) {
-            System.out.println("Selamat berbelanja " + inputUserName);
+            System.out.println("Selamat berbelanja " + inputUserName + "\n");
         } else if (inputUserName.equalsIgnoreCase("user3")) {
-            System.out.println("Selamat berbelanja " + inputUserName);
+            System.out.println("Selamat berbelanja " + inputUserName + "\n");
         } else {
-            System.out.println("Input sesuai username yang tersedia!!!");
-            System.exit(1);
+            throw new NullRequestException(
+                    "\n============================\n"
+                            + "User tidak ditemukan!\n"
+                            + "============================\n"
+            );
         }
 
         return inputUserName;

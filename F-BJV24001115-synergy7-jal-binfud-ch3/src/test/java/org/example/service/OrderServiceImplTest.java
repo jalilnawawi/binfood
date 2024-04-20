@@ -3,6 +3,7 @@ package org.example.service;
 
 import org.example.Data;
 import org.example.controller.OrderController;
+import org.example.model.Order;
 import org.example.model.OrderDetail;
 import org.example.model.Product;
 import org.junit.jupiter.api.Assertions;
@@ -20,8 +21,6 @@ class OrderServiceImplTest {
     OrderDetail orderDetail;
     OrderService orderService;
     OrderController orderController;
-    private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
-    private final PrintStream standardOut = System.out;
 
     @BeforeEach
     void setUp(){
@@ -29,9 +28,7 @@ class OrderServiceImplTest {
         orderDetail = new OrderDetail();
         orderService = new OrderServiceImpl();
         orderController = new OrderController();
-        System.setOut(new PrintStream(outputStreamCaptor));
     }
-
 
 
     @Test
@@ -72,7 +69,6 @@ class OrderServiceImplTest {
     void printReceipt() {
     }
 
-
     @Test
     void totalQty() {
         OrderDetail orderDetail1 = new OrderDetail().setQuantity(1);
@@ -86,5 +82,23 @@ class OrderServiceImplTest {
 
     @Test
     void totalPrice() {
+        OrderDetail orderDetail1 = new OrderDetail()
+                .setProduct(new Product()
+                        .setProductName("A")
+                        .setPrice(1000)
+                )
+                .setQuantity(2);
+        OrderDetail orderDetail2 = new OrderDetail()
+                .setProduct(new Product()
+                        .setProductName("B")
+                        .setPrice(2000)
+                )
+                .setQuantity(2);
+        orderDetailMap.put("1", orderDetail1);
+        orderDetailMap.put("2", orderDetail2);
+
+        int result = orderService.totalPrice();
+        System.out.println(result);
+
     }
 }
