@@ -56,16 +56,11 @@ public class Data {
         Merchant warteg1 = new Merchant();
         Merchant warteg2 = new Merchant();
 
-        ProductVariant spicyLevel = new ProductVariant()
-                .setProductVariantId(1)
-                .setSpicyLevel("Normal");
-
         Product nasiGoreng = new Product()
                 .setProductId(1)
                 .setProductName("Nasi Goreng")
                 .setPrice(15000)
                 .setMerchant(warteg1)
-                .setProductVariant(spicyLevel);
 
         Product mieGoreng = new Product()
                 .setProductId(2)
@@ -102,7 +97,6 @@ public class Data {
                 .setProductName("Nasi Goreng")
                 .setPrice(15000)
                 .setMerchant(warteg2)
-                .setProductVariant(spicyLevel);
 
         Product mieGoreng2 = new Product()
                 .setProductId(2)
