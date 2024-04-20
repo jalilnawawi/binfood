@@ -1,0 +1,13 @@
+
+a	java:S112µ"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+x
+java:S1192˜"aDefine a constant instead of duplicating this literal "===============================
+" 3 times.(„¦½š
+H
+java:S6126-"2Replace this String concatenation with Text block.(ô£‘§
+@	java:S106a"+Replace this use of System.out by a logger.(¢Š÷Þ
+@	java:S106h"+Replace this use of System.out by a logger.(©ŒÈÏ
+@	java:S106i"+Replace this use of System.out by a logger.(Âý×¹
+E	java:S106w"+Replace this use of System.out by a logger.(ªÓ¼áþÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(œ»³•
+F	java:S106‡"+Replace this use of System.out by a logger.(¡×½…ùÿÿÿÿ

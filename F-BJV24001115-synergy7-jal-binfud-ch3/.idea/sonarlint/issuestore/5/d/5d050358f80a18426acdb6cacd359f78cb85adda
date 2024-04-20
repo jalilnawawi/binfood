@@ -1,0 +1,47 @@
+
+š
+java:S1192*"RDefine a constant instead of duplicating this literal "Select option => " 3 times.(–šÂêüÿÿÿÿ8’»º¼ï1J$0001b54d-31f3-44b8-bc32-f8eaba6b1d95
+¡
+java:S11920"^Define a constant instead of duplicating this literal "============================
+" 4 times.(™º…ä8’»º¼ï1J$6fd89ddc-d784-4460-a3ec-18511a9a7634
+r	java:S106"+Replace this use of System.out by a logger.(¶ÒæÅüÿÿÿÿ8¨³Œ›í1J$83cf072a-a538-4617-bbb7-7db1dd69b2a5
+r	java:S106"+Replace this use of System.out by a logger.(Û¬ñĞÿÿÿÿÿ8©³Œ›í1J$82f9595a-08a0-4719-a626-ec26f9303511
+r	java:S106"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8©³Œ›í1J$da0e9cbe-c568-4f9a-ad3d-fb1fcd6f424b
+l	java:S106"+Replace this use of System.out by a logger.(ÀÅÛJ8©³Œ›í1J$0ee25893-cc67-4b06-a927-ec19547699fd
+t
+java:S6126"2Replace this String concatenation with Text block.(ÀÅÛJ8ª³Œ›í1J$822756e1-ca5a-42ed-8825-cb53bc79f945
+m	java:S106$"+Replace this use of System.out by a logger.(ÆÀûı8ª³Œ›í1J$7cc35ae8-4e18-445d-8929-99e9e89ec5d7
+z
+java:S6126%"2Replace this String concatenation with Text block.(ú½Ãşÿÿÿÿ8ª³Œ›í1J$14092acd-102b-434e-add6-9cf889b59571
+r	java:S106)"+Replace this use of System.out by a logger.(Û¬ñĞÿÿÿÿÿ8ª³Œ›í1J$c8b4f326-9798-4f41-90ff-0144ff5ff0fa
+m	java:S106/"+Replace this use of System.out by a logger.(ÆÀûı8«³Œ›í1J$6f28bd39-2d40-4cd7-a21a-f25c27886d2a
+u
+java:S61260"2Replace this String concatenation with Text block.(™º…ä8«³Œ›í1J$c5ec7929-175d-4424-aa07-323ddd8095f4
+m	java:S1065"+Replace this use of System.out by a logger.(ÆÀûı8Ë§›í1J$757aaa58-61da-40ee-bbce-02f9624753ac
+r	java:S1069"+Replace this use of System.out by a logger.(Û¬ñĞÿÿÿÿÿ8Øë›í1J$aac1eb51-fde9-476a-80e7-e20f077e494c
+m	java:S106>"+Replace this use of System.out by a logger.(ÆÀûı8»º¼ï1J$aef35f59-c85f-46f8-ac5d-7e87b7ffeac2
+u
+java:S6126?"2Replace this String concatenation with Text block.(™º…ä8Ÿ»º¼ï1J$3fcb3867-0119-48c1-bb9a-ce66cb74cb05
+m	java:S106D"+Replace this use of System.out by a logger.(ÆÀûı8Ÿ»º¼ï1J$9bd02d2b-d00b-4976-948e-c551772526d9
+r	java:S106H"+Replace this use of System.out by a logger.(Û¬ñĞÿÿÿÿÿ8 »º¼ï1J$3f65c140-b973-4a94-b246-4a9fb6199a4b
+…
+java:S1128"CRemove this unused import 'org.example.controller.OrderController'.(«¼Z8›³“Öï1J$b091b00c-5103-408f-8a8d-6b0d0db6fd0c
+‚
+java:S1128":Remove this unused import 'org.example.model.OrderDetail'.(–ñÊ“ûÿÿÿÿ8›³“Öï1J$36a3e608-45da-46bf-a0bc-1aa466e2d539
+€
+java:S1128"=Remove this unused import 'org.example.service.OrderService'.(™Ï8›³“Öï1J$7c3e8fb3-69df-4bb9-ae29-d86716a6cce6
+‰
+java:S1128"ARemove this unused import 'org.example.service.OrderServiceImpl'.(Üíúÿÿÿÿ8›³“Öï1J$3b938869-b39f-4ebc-9dd1-17ff0af08846
+u
+java:S1128"3Remove this unused import 'java.io.BufferedWriter'.(¬õº/8›³“Öï1J$2b31ce55-d93a-439f-b13f-23599df09f22
+w
+java:S1128	"/Remove this unused import 'java.io.FileWriter'.(Ã‘ÅÃıÿÿÿÿ8œ³“Öï1J$d3f3a338-dc10-4996-bd9a-3bbe3276be0d
+x
+java:S1128
+"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ8œ³“Öï1J$16f43e9d-4894-4896-8cca-427d9f95fbbe
+v
+java:S1128".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8œ³“Öï1J$a73bfce4-35a4-4057-a49e-d8a1ac441d3d
+r
+java:S1128"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8œ³“Öï1J$b530047d-aa38-4cc9-ac72-6750b6f4000a
+„
+java:S1128"<Remove this unused import 'org.example.Data.orderDetailMap'.(§€úæùÿÿÿÿ8œ³“Öï1J$1f2d8440-daff-46fe-b540-f9c7fa8deeea
