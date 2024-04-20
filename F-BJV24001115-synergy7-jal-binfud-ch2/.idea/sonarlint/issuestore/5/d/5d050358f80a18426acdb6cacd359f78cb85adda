@@ -1,0 +1,19 @@
+
+r	java:S106"+Replace this use of System.out by a logger.(­–´½øÿÿÿÿ8Â¶Ëè1J$ef30ac5e-cfe2-45df-ba21-2f0ad6403a93
+r	java:S106"+Replace this use of System.out by a logger.(½Ó…”úÿÿÿÿ8Å¶Ëè1J$b6fbbc6a-0b26-4069-81c9-67595908e79a
+x
+java:S1128"5Remove this unused import 'lombok.NoArgsConstructor'.(¸¨›8ÇÓ¤Ëè1J$72641302-368e-4fbb-b814-ab6cf8cbd4ef
+u
+java:S1128"-Remove this unused import 'org.example.Data'.(íŠ½±ıÿÿÿÿ8ÇÓ¤Ëè1J$4721de7e-74d7-46b0-ac09-cf2c60a4e4c1
+P
+java:S1128"3Remove this unused import 'org.example.model.Menu'.(ßÔŞÌ8ÛÛªËè1
+\
+java:S1128":Remove this unused import 'org.example.model.OrderedItem'.(Àş çşÿÿÿÿ8ÛÛªËè1
+€
+java:S1128"=Remove this unused import 'org.example.service.OrderService'.(™Ï8ÈÓ¤Ëè1J$15d0e87b-7778-4446-89af-efbbcc561fbe
+‰
+java:S1128	"ARemove this unused import 'org.example.service.OrderServiceImpl'.(Üíúÿÿÿÿ8ÈÓ¤Ëè1J$f01ce0d7-e610-4f96-8706-8647e08d0408
+w
+java:S1128"/Remove this unused import 'java.sql.SQLOutput'.(ê¤òÃùÿÿÿÿ8ÈÓ¤Ëè1J$70f9bbc3-4340-48bd-a02a-7f412d33e0ef
+x
+java:S1128"5Remove this unused import 'org.example.Data.menuMap'.(ë©”ˆ8ÈÓ¤Ëè1J$b418afb6-83d0-417b-b337-a6903595198e

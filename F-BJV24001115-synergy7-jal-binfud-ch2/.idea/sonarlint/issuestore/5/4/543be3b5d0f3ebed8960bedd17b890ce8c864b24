@@ -1,0 +1,15 @@
+
+–
+java:S1104"SMake menuMap a static final constant or non-public and provide accessors if needed.(ÿƒşµ8óô³Ãè1J$321b2ac8-ee81-48bb-a882-07f9bafb6181
+p
+java:S1444"-Make this "public static menuMap" field final(ÿƒşµ8ôô³Ãè1J$c4fa77eb-95fa-49e6-a621-3a51ad059986
+`
+java:S2386"Make this member "protected".(ÿƒşµ8öô³Ãè1J$dba81309-6037-4625-a1a3-869b0a4dfc41
+}
+java:S1118":Add a private constructor to hide the implicit public one.(Ú¦Ì‰8÷ô³Ãè1J$f9a1dc73-5bae-453f-a2d5-4088e5b9449a
+\
+java:S1128":Remove this unused import 'org.example.model.OrderedItem'.(Àş çşÿÿÿÿ8À–îÈè1
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8À–îÈè1
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8À–îÈè1
