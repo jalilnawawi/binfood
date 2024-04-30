@@ -1,5 +1,6 @@
 package com.example.challenge4.service;
 
+import com.example.challenge4.controller.MerchantController;
 import com.example.challenge4.model.Merchant;
 import com.example.challenge4.repository.MerchantRepository;
 import com.example.challenge4.view.MerchantView;

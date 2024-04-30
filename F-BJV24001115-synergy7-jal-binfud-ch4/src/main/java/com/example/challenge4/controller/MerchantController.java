@@ -15,8 +15,11 @@ import java.util.Scanner;
 public class MerchantController {
     @Autowired
     MerchantView merchantView;
-
     public void mainMenu(){
+        createMerchant();
+    }
+
+    public void createMerchant(){
         System.out.println("Silahkan isi form");
 
         Merchant merchant = new Merchant();
