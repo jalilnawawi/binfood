@@ -14,7 +14,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @Entity
 @Table(name = "merchant")
-public class Merchant {
+public class Merchant extends BaseModel{
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
@@ -22,4 +22,5 @@ public class Merchant {
     private String name;
     private String location;
     private boolean open;
+    private boolean deleted;
 }

@@ -14,7 +14,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @Entity
 @Table(name = "product")
-public class Product {
+public class Product extends BaseModel{
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
@@ -25,4 +25,6 @@ public class Product {
     @ManyToOne(targetEntity = Merchant.class)
     @JoinColumn(name = "merchant_id")
     private Merchant merchant;
+
+    private boolean deleted;
 }
