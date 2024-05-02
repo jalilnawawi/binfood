@@ -55,14 +55,10 @@ w
 G.idea/sonarlint/issuestore/6/3/63f7e2be2ea63c91372c5c255f3547d4e99080a1,3\c\3cfd15aadbb29581d364df975b9faece58c854dd
 w
 G.idea/sonarlint/issuestore/6/6/6637c21465d555c202028beea4338a6613afe563,a\b\ab99c77893aa5f645b4431bee3aab8c075738144
-c
-3src/main/java/org/example/model/ProductVariant.java,e\8\e8f8b2662ad85153d9a6b092cd814f21f9b0609b
 m
 =src/test/java/org/example/service/ProductServiceImplTest.java,d\3\d3a2c1217c3729531bef64cc4064fb06fdfb1d9a
 o
 ?src/test/java/org/example/service/NullRequestExceptionTest.java,3\e\3e732bc0e3e782a5fcd2ecdf733448a78188d9f8
-C
-ch-3-playground.iml,2\d\2db11d83c3e9f1f3bfd427946d2aa3778266887e
 \
 ,src/main/java/org/example/view/UserView.java,8\d\8d0ab65e7490180032ffdcc1cd0b87bf76afb65b
 b

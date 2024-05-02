@@ -20,7 +20,7 @@ public class Product extends BaseModel{
     private UUID id;
 
     private String name;
-    private Double price;
+    private int price;
 
     @ManyToOne(targetEntity = Merchant.class)
     @JoinColumn(name = "merchant_id")

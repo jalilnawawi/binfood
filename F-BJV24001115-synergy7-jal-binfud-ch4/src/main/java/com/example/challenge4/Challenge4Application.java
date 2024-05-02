@@ -1,7 +1,6 @@
 package com.example.challenge4;
 
 import com.example.challenge4.controller.MainController;
-import com.example.challenge4.controller.MerchantController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;

@@ -5,16 +5,10 @@ java:S1192”"aDefine a constant instead of duplicating this literal "==========
 " 3 times.(„¦½š8¼ûÃÖï1J$1fe42b24-9787-48a4-ba97-2434cabc86d8
 u
 java:S6126-"2Replace this String concatenation with Text block.(ô£‘§8áûÃÖï1J$02f17e4d-c393-4916-9bcc-75b4f194cebb
-w
-java:S2864L"4Iterate over the "entrySet" instead of the "keySet".(ÛÚ”â8äûÃÖï1J$011c3997-b10e-4791-b6dc-615b2fcbc732
-w
-java:S2864U"4Iterate over the "entrySet" instead of the "keySet".(ÛÚ”â8æûÃÖï1J$95c4cebe-bbbe-4f27-85bb-18c5619823de
 m	java:S106d"+Replace this use of System.out by a logger.(©ŒÈÏ8ëûÃÖï1J$e09d2de2-f1f7-4507-931a-084dbf7b20f7
 m	java:S106e"+Replace this use of System.out by a logger.(Âı×¹8íûÃÖï1J$454fe982-ba3e-401d-b75c-eae99d918d2f
+X
+java:S6880p"6Replace the chain of if/else with a switch expression.(ÆÚÄüÿÿÿÿ8„œ¬Ôó1
 r	java:S106s"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8ëıíßï1J$d1477e8a-e09f-4f1b-91c2-89b058bd9a3a
 m	java:S106{"+Replace this use of System.out by a logger.(œ»³•8ºÖÔàï1J$35685b67-9167-4452-a715-5b59c86eb3c8
 s	java:S106ƒ"+Replace this use of System.out by a logger.(¡×½…ùÿÿÿÿ8×äÜàï1J$9b02b100-e33f-4311-80dc-9e196005cf23
-x
-java:S2864ˆ"4Iterate over the "entrySet" instead of the "keySet".(éÀÇü8îûÃÖï1J$45575148-58f7-4aee-8082-694e37312420
-x
-java:S2864š"4Iterate over the "entrySet" instead of the "keySet".(ÛÚ”â8ïûÃÖï1J$c6e68673-4288-423b-b5db-0b418c40f718

@@ -22,7 +22,7 @@ public class MerchantController {
 
     public void mainMenu(){
 //        createMerchant();
-        showAllMerchant();
+//        showAllMerchant();
 //        showExistingMerchant();
 //        showMerchantWithStatusOpen();
 //        showMerchantByInputName();

@@ -27,10 +27,10 @@ public class ProductController {
     ProductView productView = new ProductView();
 
     public void mainMenu(){
-        merchantController.showExistingMerchant();
+//        merchantController.showExistingMerchant();
 //        createProduct();
-        showAllProduct();
-//        showProductFromSelectedMerchant();
+//        showAllProduct();
+        showProductFromSelectedMerchant();
 //        updateProduct();
 //        deleteProduct();
     }
@@ -51,7 +51,7 @@ public class ProductController {
         String nama = productInput.nextLine();
 
         productView.displayInputHarga();
-        Double price = productInput.nextDouble();
+        int price = productInput.nextInt();
 
         product.setName(nama);
         product.setPrice(price);
@@ -102,7 +102,7 @@ public class ProductController {
         String updateName = updateProduct.nextLine();
 
         productView.displayInputHarga();
-        Double updatePrice = updateProduct.nextDouble();
+        int updatePrice = updateProduct.nextInt();
 
         selectProduct.setName(updateName);
         selectProduct.setPrice(updatePrice);

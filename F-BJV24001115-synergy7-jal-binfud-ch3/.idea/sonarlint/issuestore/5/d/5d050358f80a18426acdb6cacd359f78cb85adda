@@ -15,20 +15,3 @@ u
 java:S6126;"2Replace this String concatenation with Text block.(™Ί…δ8υΰέίο1J$f92a7299-a48b-4ed2-82e5-c7a02bf4ad54
 m	java:S106@"+Replace this use of System.out by a logger.(Ζΐϋύ8–γίο1J$fa0142b0-7dfc-4a0f-a8af-21c47fceb890
 r	java:S106D"+Replace this use of System.out by a logger.(Ϋ¬ρΠÿÿÿÿÿ8—γίο1J$45aa55d8-e532-4879-9f23-ee93db78aae2
-…
-java:S1128"CRemove this unused import 'org.example.controller.OrderController'.(«ΌZ8Φυδίο1J$ff423583-f5fa-4fcb-ad83-6f7447616e9f
-€
-java:S1128"=Remove this unused import 'org.example.service.OrderService'.(™Ο8ƒΙπίο1J$b9e08965-90a7-4a2c-900f-bb87942137b2
-‰
-java:S1128"ARemove this unused import 'org.example.service.OrderServiceImpl'.(άνϊÿÿÿÿ8ƒΙπίο1J$62d7b134-2447-4129-a438-a864fa188500
-u
-java:S1128	"3Remove this unused import 'java.io.BufferedWriter'.(¬υΊ/8Φυδίο1J$4c980ba5-7388-4719-afda-eada2fc63da1
-w
-java:S1128
-"/Remove this unused import 'java.io.FileWriter'.(Γ‘ΕΓύÿÿÿÿ8Φυδίο1J$51ed03c3-aac6-4d60-9d93-1dfdbbffb9d6
-x
-java:S1128"0Remove this unused import 'java.io.IOException'.(ªΊ»Ϊύÿÿÿÿ8Φυδίο1J$d767c679-d086-4008-9110-747e83d24c28
-v
-java:S1128".Remove this unused import 'java.util.HashMap'.(™”€ωÿÿÿÿ8Φυδίο1J$b4d2c7ae-188b-48ca-9577-d31cbd888191
-„
-java:S1128"<Remove this unused import 'org.example.Data.orderDetailMap'.(§€ϊζωÿÿÿÿ8Φυδίο1J$5613d244-8f2c-4fa5-a61a-dd2c8865a373
