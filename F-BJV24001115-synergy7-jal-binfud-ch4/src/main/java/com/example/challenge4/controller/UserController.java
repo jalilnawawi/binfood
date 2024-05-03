@@ -4,11 +4,13 @@ import com.example.challenge4.model.Users;
 import com.example.challenge4.service.UsersService;
 import com.example.challenge4.view.UsersView;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
 import java.util.Scanner;
+import java.util.UUID;
+
 @Component
 @Slf4j
 public class UserController {
@@ -18,7 +20,9 @@ public class UserController {
     UsersView usersView = new UsersView();
 
     public void mainMenu() {
-        createUser();
+//        createUser();
+//        showUsers();
+        updateUsers();
     }
 
     public void createUser(){
@@ -39,10 +43,33 @@ public class UserController {
         user.setEmailAddress(email);
         user.setPassword(password);
 
-        usersService.createUser(user);
-        System.out.println(user.getId() + " | " + user.getUsername());
-
+        usersService.createUserByProcedure(username,email,password);
+        System.out.println("Welcome " + user.getUsername());
     }
 
+    public void showUsers(){
+        List<Users> usersList = usersService.showUserByProcedure();
+        usersList.forEach(user -> System.out.println(
+                user.getUsername()
+        ));
+    }
+
+    public void updateUsers(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Input id = ");
+        String id = scanner.nextLine();
+
+        usersView.displayInputUsername();
+        String username = scanner.nextLine();
+
+        usersView.displayInputEmail();
+        String email = scanner.nextLine();
+
+        usersView.displayInputPassword();
+        String password = scanner.nextLine();
+
+        usersService.updateUserByProcedure(UUID.fromString(id), username, email, password);
+        System.out.println(username + " with id = " + id + " successfully updated");
+    }
 
 }
