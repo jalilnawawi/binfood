@@ -29,8 +29,8 @@ public class ProductController {
     public void mainMenu(){
 //        merchantController.showExistingMerchant();
 //        createProduct();
-//        showAllProduct();
-        showProductFromSelectedMerchant();
+        showAllProduct();
+//        showProductFromSelectedMerchant();
 //        updateProduct();
 //        deleteProduct();
     }
@@ -69,6 +69,9 @@ public class ProductController {
                 + product.getName() + " | "
                 + product.getPrice()
         ));
+//        System.out.println(productList.get(1).getName() + " | "
+//            + productList.get(1).getMerchant().getName()
+//        );
     }
 
     public void showProductFromSelectedMerchant(){
@@ -77,11 +80,11 @@ public class ProductController {
         String merchantName = scanner.nextLine();
 
         Merchant selectMerchant = merchantService.getMerchantByName(merchantName);
-        List<Product> productList = productService.showProductFromSelectedMerchant(selectMerchant);
-        System.out.println("Berikut daftar menu " + selectMerchant.getName());
-        productList.forEach(product -> System.out.println(
-                product.getName() + " | " + product.getPrice()
-        ));
+//        List<Product> productList = productService.showProductFromSelectedMerchant(selectMerchant);
+//        System.out.println("Berikut daftar menu " + selectMerchant.getName());
+//        productList.forEach(product -> System.out.println(
+//                product.getName() + " | " + product.getPrice()
+//        ));
     }
 
     public void updateProduct(){
@@ -127,5 +130,4 @@ public class ProductController {
                 " berhasil dihapus"
                 );
     }
-
 }

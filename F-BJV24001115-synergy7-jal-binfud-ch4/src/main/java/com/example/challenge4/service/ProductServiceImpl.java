@@ -32,9 +32,9 @@ public class ProductServiceImpl implements ProductService{
     }
 
     @Override
-    public List<Product> showProductFromSelectedMerchant(Merchant merchant) {
-        List<Product> productList = productRepository.getProductByMerchant(merchant);
-        return productList;
+    public Product showProductFromSelectedMerchant(Merchant merchant) {
+        Product product = productRepository.getProductByMerchant(merchant);
+        return product;
     }
 
     @Override
@@ -53,5 +53,9 @@ public class ProductServiceImpl implements ProductService{
         product = productRepository.save(product);
     }
 
+    @Override
+    public Product getProductByNameAndMerchant(String name, String merchantName) {
 
+        return null;
+    }
 }

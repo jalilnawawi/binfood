@@ -4,6 +4,7 @@ import com.example.challenge4.model.Users;
 import com.example.challenge4.service.UsersService;
 import com.example.challenge4.view.UsersView;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -21,8 +22,10 @@ public class UserController {
 
     public void mainMenu() {
 //        createUser();
-//        showUsers();
-        updateUsers();
+        showUsers();
+//        updateUsers();
+//        deleteUser();
+//        getUserByUsername();
     }
 
     public void createUser(){
@@ -48,9 +51,9 @@ public class UserController {
     }
 
     public void showUsers(){
-        List<Users> usersList = usersService.showUserByProcedure();
+        List<Users> usersList = usersService.showUser();
         usersList.forEach(user -> System.out.println(
-                user.getUsername()
+                user.getUsername() + " | " + user.getEmailAddress()
         ));
     }
 
@@ -72,4 +75,19 @@ public class UserController {
         System.out.println(username + " with id = " + id + " successfully updated");
     }
 
+    public void deleteUser(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Input id = ");
+        String id = scanner.nextLine();
+
+        usersService.deleteUserByProcedure(UUID.fromString(id));
+        System.out.println("user dengan id = " + id + " berhasil dihapus!");
+    }
+
+    String getUserByUsername(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Input username = ");
+        String username = scanner.nextLine();
+        return username;
+    }
 }

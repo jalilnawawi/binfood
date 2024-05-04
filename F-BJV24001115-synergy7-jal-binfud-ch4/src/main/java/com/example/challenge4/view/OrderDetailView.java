@@ -1,9 +1,11 @@
 package com.example.challenge4.view;
 
 import com.example.challenge4.model.OrderDetail;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+@Component
 public class OrderDetailView {
     List<OrderDetail> orderDetailList;
     public void displaySelectProduct(){

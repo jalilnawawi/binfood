@@ -22,7 +22,7 @@ public class Order extends BaseModel{
     private UUID id;
 
     @Column(name = "order_time")
-    private Date orderTime;
+    private LocalDate orderTime;
 
     @Column(name = "destination_address")
     private String destinationAddress;

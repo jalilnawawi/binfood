@@ -24,16 +24,5 @@ v
 java:S1444".Make this "public static orderMap" field final(³ùÎøşÿÿÿÿ8¯¬ “ï1J$b100459d-f0e4-4c49-92cd-3145675d2ff9
 w
 java:S1444"4Make this "public static orderDetailMap" field final(áÄ¬Š8¯¬ “ï1J$ec0af402-6584-475b-9ba9-5e3b09bd0bdf
-`
-java:S2386"Make this member "protected".(ñô¯È8µ¬ “ï1J$3c6960f9-ba6a-4136-8a7a-c9a82946f5fe
-e
-java:S2386	"Make this member "protected".(¶øÓşÿÿÿÿ8úç—”ï1J$51a98b67-d7e8-4446-9059-d43a67a29d57
-`
-java:S2386
-"Make this member "protected".(²ëî8µ¬ “ï1J$0bc3e385-9137-4b4f-991c-4860e7990c6a
-e
-java:S2386"Make this member "protected".(³ùÎøşÿÿÿÿ8µ¬ “ï1J$c29428ea-8851-4428-b246-e4540959af1a
-`
-java:S2386"Make this member "protected".(áÄ¬Š8µ¬ “ï1J$1f4e6c88-fb52-443b-aeb2-76dbd9df52e0
 }
 java:S1118":Add a private constructor to hide the implicit public one.(Ú¦Ì‰8¹¬ “ï1J$ceb3bcca-6b27-4e11-ac91-2faf14c3e26b

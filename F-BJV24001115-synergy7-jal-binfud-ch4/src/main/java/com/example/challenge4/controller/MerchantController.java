@@ -24,7 +24,7 @@ public class MerchantController {
 //        createMerchant();
 //        showAllMerchant();
 //        showExistingMerchant();
-//        showMerchantWithStatusOpen();
+        showMerchantWithStatusOpen();
 //        showMerchantByInputName();
 //        updateMerchant();
 //        deleteMerchant();
@@ -73,17 +73,18 @@ public class MerchantController {
         ));
     }
 
-    public void showMerchantByInputName(){
+    public Merchant showMerchantByInputName(){
         System.out.print("Input nama merchant anda = ");
         Scanner scanner = new Scanner(System.in);
-        String name = scanner.nextLine();
+        String merchantName = scanner.nextLine();
 
-        Merchant selectMerchantByName = merchantService.getMerchantByName(name);
-        System.out.println("berikut data dari merchant " + selectMerchantByName.getName());
-        System.out.println(selectMerchantByName.getName() +
-                " | " + selectMerchantByName.getLocation() +
-                " | " + selectMerchantByName.isOpen()
-                );
+        Merchant selectMerchantByName = merchantService.getMerchantByName(merchantName);
+//        System.out.println("berikut data dari merchant " + selectMerchantByName.getName());
+//        System.out.println(selectMerchantByName.getName() +
+//                " | " + selectMerchantByName.getLocation() +
+//                " | " + selectMerchantByName.isOpen()
+//                );
+        return selectMerchantByName;
     }
 
     public void updateMerchant(){

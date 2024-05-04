@@ -16,9 +16,18 @@ public class MainController {
     @Autowired
     UserController userController;
 
+    @Autowired
+    OrderController orderController;
+
+    @Autowired
+    OrderDetailController orderDetailController;
+
     public void mainController(){
+//        userController.mainMenu();
 //        merchantController.mainMenu();
+//        orderController.mainMenu();
 //        productController.mainMenu();
-          userController.mainMenu();
+        orderDetailController.mainMenu();
+
     }
 }
