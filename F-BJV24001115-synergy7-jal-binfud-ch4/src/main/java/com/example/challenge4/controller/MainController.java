@@ -50,17 +50,19 @@ public class MainController {
     Map<Long, OrderDetail> orderDetailMap = new HashMap<>();
 
     public void mainController(){
-        mainView.displayLandingPage();
-        Scanner scanner = new Scanner(System.in);
-        int selectLogin = scanner.nextInt();
-        if (selectLogin == 1){
-            userController.mainMenu();
-//            orderController.mainMenu();
-//            orderDetailController.mainMenu();
-        } else if (selectLogin == 2) {
-            merchantController.mainMenu();
-//            productController.mainMenu();
-        }
+//        mainView.displayLandingPage();
+//        Scanner scanner = new Scanner(System.in);
+//        int selectLogin = scanner.nextInt();
+//        if (selectLogin == 1){
+//            userController.mainMenu();
+////            orderController.mainMenu();
+////            orderDetailController.mainMenu();
+//        } else if (selectLogin == 2) {
+//            merchantController.mainMenu();
+////            productController.mainMenu();
+//        }
+        //TODO perbaiki servis pemesanan
+        orderDetailController.mainMenu();
     }
 
 }

@@ -22,16 +22,10 @@ public class OrderController {
     UserController userController;
 
     @Autowired
-    MerchantService merchantService;
-
-    @Autowired
-    MerchantController merchantController;
-
-    @Autowired
     OrderService orderService;
 
     Users user;
-    Merchant merchant;
+
 
     public void mainMenu(){
         createOrder();

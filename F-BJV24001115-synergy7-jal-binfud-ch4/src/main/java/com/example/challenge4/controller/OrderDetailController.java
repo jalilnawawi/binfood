@@ -15,25 +15,10 @@ import java.util.*;
 @Slf4j
 public class OrderDetailController {
     @Autowired
-    OrderDetailService orderDetailService;
-
-    @Autowired
-    UserController userController;
-
-    @Autowired
-    UsersService usersService;
-
-    @Autowired
     MerchantController merchantController;
 
     @Autowired
-    MerchantService merchantService;
-
-    @Autowired
     OrderController orderController;
-
-    @Autowired
-    OrderService orderService;
 
     @Autowired
     ProductService productService;
