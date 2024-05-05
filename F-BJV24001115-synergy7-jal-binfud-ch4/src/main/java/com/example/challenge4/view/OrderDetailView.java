@@ -1,21 +1,22 @@
 package com.example.challenge4.view;
 
 import com.example.challenge4.model.OrderDetail;
+import com.example.challenge4.model.Product;
+import com.example.challenge4.repository.ProductRepository;
+import com.example.challenge4.service.ProductService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Component
 public class OrderDetailView {
+    @Autowired
+    ProductService productService;
+
     List<OrderDetail> orderDetailList;
     public void displaySelectProduct(){
-        System.out.println(
-                "1. " + "Nasi Goreng " + " | " + "15.000\n" +
-                "2. " + "Mie Goreng " + " | " + "13.000\n" +
-                "3. " + "Nasi + Ayam " + " | " + "18.000\n" +
-                "4. " + "Es Teh " + " | " + "3.000\n" +
-                "5. " + "Es Jeruk " + " | " + "5.000\n"
-        );
         System.out.println("Pilih Menu => ");
     }
 

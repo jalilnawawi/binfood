@@ -8,10 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
-import java.util.Map;
-import java.util.Random;
-import java.util.Scanner;
-import java.util.TreeMap;
+import java.util.*;
 
 @Component
 @Slf4j
@@ -45,6 +42,13 @@ public class OrderDetailController {
     @Autowired
     OrderDetailView orderDetailView;
 
+    Users user;
+    Order order;
+    Merchant merchant;
+    Product selectedProduct;
+    OrderDetail orderDetail = new OrderDetail();
+
+
     public Long generateIdForMap(){
         Random random = new Random();
         Long randomId = random.nextLong();
@@ -52,54 +56,37 @@ public class OrderDetailController {
     }
 
     public void mainMenu(){
-        selectProduct();
+        order = orderController.createOrder();
+        merchantController.showMerchantWithStatusOpen();
+        merchant = merchantController.showMerchantByInputName();
+
+        selectedProduct = selectProduct();
+        int quantity = inputQty();
+
+        orderDetail.setOrder(order);
+        orderDetail.setProduct(selectedProduct);
+        orderDetail.setQuantity(quantity);
+        orderDetailMap.put(generateIdForMap(), orderDetail);
+        orderDetailMap.forEach((aLong, orderDetail1) -> System.out.println(
+                orderDetail1.getProduct().getName() + " | "
+                + orderDetail1.getProduct().getPrice() + " | "
+                + orderDetail1.getQuantity()
+        ));
     }
 
-    public void selectProduct(){
-        Scanner scanner = new Scanner(System.in);
-
-        //user
-        userController.showUsers();
-        System.out.println("input username => ");
-        String username = scanner.nextLine();
-        Users user = usersService.getUserByUsername(username);
-
-        //merchant
-        merchantController.showMerchantWithStatusOpen();
-        System.out.println("input merchant name => ");
-        String merchantName = scanner.nextLine();
-        Merchant merchant = merchantService.getMerchantByName(merchantName);
-
-        //order
-        Order order = new Order();
-        order.setOrderTime(LocalDate.now());
-        order.setUsers(user);
-        order.setDestinationAddress(merchant.getLocation());
-        orderService.create(order);
-
-        OrderDetail orderDetail = new OrderDetail();
+    public Product selectProduct(){
+        System.out.println("Berikut daftar menu " + merchant.getName());
+        List<Product> productList = productService.showProductFromSelectedMerchant(merchant);
+        productList.forEach(product -> System.out.println(
+                product.getName() + " | " + product.getPrice()
+        ));
 
         orderDetailView.displaySelectProduct();
-        Product product = new Product();
+        Scanner select = new Scanner(System.in);
+        String inputProductName = select.nextLine();
+        selectedProduct = productService.getProductByName(inputProductName);
 
-        product.setMerchant(merchant);
-        int selectProduct = scanner.nextInt();
-        if (selectProduct == 1){
-            product = productService.getProductByName("Nasi Goreng");
-        }
-
-        if (product != null){
-            int inputQty = inputQty();
-            orderDetail.setOrder(order);
-            orderDetail.setProduct(product);
-            orderDetail.setQuantity(inputQty);
-            orderDetailService.create(orderDetail);
-            orderDetailMap.put(generateIdForMap(), orderDetail);
-        }
-        orderDetailMap.forEach((aLong, orderDetail1) -> System.out.println(
-                orderDetail1.getProduct().getName() + " | " + orderDetail1.getProduct().getPrice()
-                + " | " + orderDetail1.getProduct().getMerchant().getName()
-        ));
+        return selectedProduct;
     }
 
     public int inputQty(){

@@ -25,7 +25,7 @@ public class MerchantController {
 //        showAllMerchant();
 //        showExistingMerchant();
         showMerchantWithStatusOpen();
-//        showMerchantByInputName();
+        showMerchantByInputName();
 //        updateMerchant();
 //        deleteMerchant();
     }
@@ -78,7 +78,7 @@ public class MerchantController {
     }
 
     public Merchant showMerchantByInputName(){
-//        System.out.print("Input nama merchant anda = ");
+        System.out.print("Silahkan pilih resto = ");
         Scanner scanner = new Scanner(System.in);
         String merchantName = scanner.nextLine();
 

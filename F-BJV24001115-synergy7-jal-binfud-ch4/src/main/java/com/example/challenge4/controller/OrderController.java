@@ -41,13 +41,9 @@ public class OrderController {
         Order order = new Order();
         order.setOrderTime(LocalDate.now());
 
-//        userController.showUsers();
+        userController.showUsers();
         user = usersService.getUserByUsername(userController.getUserByUsername());
         order.setUsers(user);
-
-        merchantController.showMerchantWithStatusOpen();
-        merchant = merchantController.showMerchantByInputName();
-        order.setDestinationAddress(merchant.getLocation());
 
         orderService.create(order);
         System.out.println("Selamat berbelanja " + order.getUsers().getUsername());

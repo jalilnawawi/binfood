@@ -8,9 +8,9 @@ import java.util.List;
 public interface ProductService {
     Product create(Product product);
     List<Product> showAllProduct();
-    Product showProductFromSelectedMerchant(Merchant merchant);
     Product getProductByName(String name);
     void updateProduct(Product product);
     void deleteProduct(Product product);
-    Product getProductByNameAndMerchant(String name, String merchantName);
+
+    List<Product> showProductFromSelectedMerchant(Merchant merchant);
 }

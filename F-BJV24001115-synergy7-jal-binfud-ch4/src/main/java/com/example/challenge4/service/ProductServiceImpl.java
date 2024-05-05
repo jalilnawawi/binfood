@@ -32,12 +32,6 @@ public class ProductServiceImpl implements ProductService{
     }
 
     @Override
-    public Product showProductFromSelectedMerchant(Merchant merchant) {
-        Product product = productRepository.getProductByMerchant(merchant);
-        return product;
-    }
-
-    @Override
     public Product getProductByName(String name) {
         Optional<Product> productOptional = productRepository.getProductByName(name);
         return productOptional.get();
@@ -54,8 +48,8 @@ public class ProductServiceImpl implements ProductService{
     }
 
     @Override
-    public Product getProductByNameAndMerchant(String name, String merchantName) {
-
-        return null;
+    public List<Product> showProductFromSelectedMerchant(Merchant merchant) {
+        List<Product> productList = productRepository.findProductByMerchant(merchant);
+        return productList;
     }
 }
