@@ -21,11 +21,24 @@ public class UserController {
     UsersView usersView = new UsersView();
 
     public void mainMenu() {
-//        createUser();
-        showUsers();
-//        updateUsers();
-//        deleteUser();
-//        getUserByUsername();
+
+        Scanner scanner = new Scanner(System.in);
+        usersView.userServiceDisplay();
+        System.out.println("Pilih opsi => ");
+        int option = scanner.nextInt();
+        if (option == 1){
+            showUsers();
+            getUserByUsername();
+        }
+        else if (option == 2){
+            createUser();
+        } else if (option == 3) {
+            showUsers();
+            updateUsers();
+        } else if (option == 4) {
+            showUsers();
+            deleteUser();
+        }
     }
 
     public void createUser(){
@@ -51,6 +64,7 @@ public class UserController {
     }
 
     public void showUsers(){
+        System.out.println("Berikut username yang sudah terdaftar");
         List<Users> usersList = usersService.showUser();
         usersList.forEach(user -> System.out.println(
                 user.getUsername() + " | " + user.getEmailAddress()
@@ -86,7 +100,7 @@ public class UserController {
 
     String getUserByUsername(){
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Input username = ");
+        System.out.print("Username = ");
         String username = scanner.nextLine();
         return username;
     }

@@ -9,7 +9,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -74,7 +73,7 @@ public class ProductController {
 //        );
     }
 
-    public void showProductFromSelectedMerchant(){
+    public void showProductFromSelectedMerchantVoid(){
         System.out.print("Silahkan pilih merchant = ");
         Scanner scanner = new Scanner(System.in);
         String merchantName = scanner.nextLine();
@@ -96,7 +95,7 @@ public class ProductController {
         Scanner inputProductName = new Scanner(System.in);
         String productName = inputProductName.nextLine();
 
-        Product selectProduct = productService.getProductByName(productName);
+//        Product selectProduct = productService.getProductByName(productName, );
 
         System.out.println("Silahkan input form perbaruan produk");
         Scanner updateProduct = new Scanner(System.in);
@@ -106,12 +105,12 @@ public class ProductController {
 
         productView.displayInputHarga();
         int updatePrice = updateProduct.nextInt();
-
-        selectProduct.setName(updateName);
-        selectProduct.setPrice(updatePrice);
-
-        productService.updateProduct(selectProduct);
-        System.out.println("berhasil memperbarui menu " + selectProduct.getName());
+//
+//        selectProduct.setName(updateName);
+//        selectProduct.setPrice(updatePrice);
+//
+//        productService.updateProduct(selectProduct);
+//        System.out.println("berhasil memperbarui menu " + selectProduct.getName());
     }
 
     public void deleteProduct(){
@@ -122,12 +121,26 @@ public class ProductController {
         Scanner inputProductName = new Scanner(System.in);
         String productName = inputProductName.nextLine();
 
-        Product selectProduct = productService.getProductByName(productName);
+//        Product selectProduct = productService.getProductByName(productName, );
 
-        selectProduct.setDeleted(true);
-        productService.deleteProduct(selectProduct);
-        System.out.println("Menu " + selectProduct.getName() +
-                " berhasil dihapus"
-                );
+//        selectProduct.setDeleted(true);
+//        productService.deleteProduct(selectProduct);
+//        System.out.println("Menu " + selectProduct.getName() +
+//                " berhasil dihapus"
+//                );
+    }
+
+    public Merchant showProductFromSelectedMerchant(){
+        System.out.print("Silahkan pilih merchant = ");
+        Scanner scanner = new Scanner(System.in);
+        String merchantName = scanner.nextLine();
+
+        Merchant selectMerchant = merchantService.getMerchantByName(merchantName);
+//        List<Product> productList = productService.showProductFromSelectedMerchant(selectMerchant);
+//        System.out.println("Berikut daftar menu " + selectMerchant.getName());
+//        productList.forEach(product -> System.out.println(
+//                product.getName() + " | " + product.getPrice()
+//        ));
+        return selectMerchant;
     }
 }

@@ -68,13 +68,17 @@ public class MerchantController {
 
     public void showMerchantWithStatusOpen(){
         List<Merchant> merchants = merchantService.showOpenMerchant();
+        System.out.println();
+        System.out.println("===========================");
         merchants.forEach(merchant -> System.out.println(
-                merchant.getName() + " | " + merchant.isOpen()
+                merchant.getName()
         ));
+        System.out.println("===========================");
+        System.out.println();
     }
 
     public Merchant showMerchantByInputName(){
-        System.out.print("Input nama merchant anda = ");
+//        System.out.print("Input nama merchant anda = ");
         Scanner scanner = new Scanner(System.in);
         String merchantName = scanner.nextLine();
 

@@ -41,7 +41,7 @@ public class OrderController {
         Order order = new Order();
         order.setOrderTime(LocalDate.now());
 
-        userController.showUsers();
+//        userController.showUsers();
         user = usersService.getUserByUsername(userController.getUserByUsername());
         order.setUsers(user);
 
@@ -50,7 +50,7 @@ public class OrderController {
         order.setDestinationAddress(merchant.getLocation());
 
         orderService.create(order);
-        System.out.println(order.getId() + " | " + order.getUsers().getUsername());
+        System.out.println("Selamat berbelanja " + order.getUsers().getUsername());
 
         return order;
     }
