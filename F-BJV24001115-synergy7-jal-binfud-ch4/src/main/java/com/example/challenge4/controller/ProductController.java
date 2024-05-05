@@ -28,12 +28,12 @@ public class ProductController {
 
     public void mainMenu(){
         merchantController.showExistingMerchant();
-//        createProduct();
+        createProduct();
 //        showAllProduct();
 //        getProductByName();
 //        updateProduct();
 //        deleteProduct();
-        showProductByMerchant();
+//        showProductByMerchant();
     }
 
 

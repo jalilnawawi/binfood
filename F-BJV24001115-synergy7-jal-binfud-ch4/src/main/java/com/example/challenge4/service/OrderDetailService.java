@@ -8,9 +8,4 @@ import java.util.Optional;
 
 public interface OrderDetailService {
     OrderDetail create(OrderDetail orderDetail);
-
-    Product selectProduct(int selectProduct, Merchant merchant);
-
-    int quantity();
-
 }

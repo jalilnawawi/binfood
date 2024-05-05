@@ -9,13 +9,13 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Map;
 
 @Component
 public class OrderDetailView {
     @Autowired
     ProductService productService;
 
-    List<OrderDetail> orderDetailList;
     public void displaySelectProduct(){
         System.out.println("Pilih Menu => ");
     }
@@ -34,11 +34,4 @@ public class OrderDetailView {
         );
     }
 
-    public void displayConfirmPay() {
-        orderDetailList.forEach(orderDetail -> System.out.println(
-                orderDetail.getProduct().getName() + " | " +
-                        orderDetail.getQuantity() + " | " +
-                        orderDetail.getProduct().getPrice()
-        ));
-    }
 }

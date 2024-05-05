@@ -3,6 +3,7 @@ package com.example.challenge4.controller;
 import com.example.challenge4.model.*;
 import com.example.challenge4.service.*;
 import com.example.challenge4.view.OrderDetailView;
+import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -37,17 +38,17 @@ public class OrderDetailController {
     @Autowired
     ProductService productService;
 
-    Map<Long, OrderDetail> orderDetailMap = new TreeMap();
 
     @Autowired
     OrderDetailView orderDetailView;
 
-    Users user;
     Order order;
     Merchant merchant;
     Product selectedProduct;
     OrderDetail orderDetail = new OrderDetail();
 
+    @Getter
+    Map<Long, OrderDetail> orderDetailMap = new TreeMap();
 
     public Long generateIdForMap(){
         Random random = new Random();
@@ -72,6 +73,7 @@ public class OrderDetailController {
                 + orderDetail1.getProduct().getPrice() + " | "
                 + orderDetail1.getQuantity()
         ));
+        confirmPay();
     }
 
     public Product selectProduct(){
@@ -95,4 +97,19 @@ public class OrderDetailController {
         int inputQty = scanner.nextInt();
         return inputQty;
     }
+
+    public void confirmPay(){
+        orderDetailView.displayConfirmPayHeader();
+        orderDetailMap.forEach((aLong, orderDetail1) -> System.out.println(
+                orderDetail1.getProduct().getName() + " | "
+                + orderDetail1.getQuantity() + " | "
+                + orderDetail1.getProduct().getPrice()
+        ));
+
+        int totalQty = orderDetail.getQuantity();
+        int totalPrice = orderDetail.getQuantity() * orderDetail.getProduct().getPrice();
+        System.out.println("-----------------------------+");
+        System.out.println("Total " + "\t" + totalQty + " | " + totalPrice);
+    }
+
 }

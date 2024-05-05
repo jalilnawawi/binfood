@@ -1,5 +1,7 @@
 package com.example.challenge4.service;
 
+import com.example.challenge4.controller.OrderController;
+import com.example.challenge4.controller.OrderDetailController;
 import com.example.challenge4.model.Merchant;
 import com.example.challenge4.model.OrderDetail;
 import com.example.challenge4.model.Product;
@@ -11,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 @Service
@@ -18,6 +21,9 @@ import java.util.Optional;
 public class OrderDetailServiceImpl implements OrderDetailService{
     @Autowired
     OrderDetailRepository orderDetailRepository;
+
+    @Autowired
+    OrderController orderController;
 
     @Autowired
     ProductRepository productRepository;
@@ -29,24 +35,10 @@ public class OrderDetailServiceImpl implements OrderDetailService{
     ProductService productService;
 
 
-
     @Override
     public OrderDetail create(OrderDetail orderDetail) {
         orderDetail = orderDetailRepository.save(orderDetail);
         return orderDetail;
     }
 
-    @Override
-    public Product selectProduct(int selectProduct, Merchant merchant) {
-        List<Product> productList = productService.showAllProduct()
-                .stream().filter(product -> product.getMerchant().equals(merchant))
-                .toList();
-
-        return productList.get(selectProduct);
-    }
-
-    @Override
-    public int quantity() {
-        return 0;
-    }
 }

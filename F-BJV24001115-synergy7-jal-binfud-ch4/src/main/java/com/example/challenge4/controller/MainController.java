@@ -3,6 +3,7 @@ package com.example.challenge4.controller;
 import com.example.challenge4.model.*;
 import com.example.challenge4.service.ProductService;
 import com.example.challenge4.service.UsersService;
+import com.example.challenge4.view.MainView;
 import com.example.challenge4.view.OrderDetailView;
 import com.example.challenge4.view.UsersView;
 import lombok.extern.slf4j.Slf4j;
@@ -39,6 +40,7 @@ public class MainController {
     @Autowired
     ProductService productService;
 
+    MainView mainView = new MainView();
     UsersView usersView = new UsersView();
     OrderDetailView orderDetailView = new OrderDetailView();
 
@@ -48,10 +50,17 @@ public class MainController {
     Map<Long, OrderDetail> orderDetailMap = new HashMap<>();
 
     public void mainController(){
-//        userController.mainMenu();
-//        orderController.mainMenu();
-//        merchantController.mainMenu();
-//        productController.mainMenu();
-        orderDetailController.mainMenu();
+        mainView.displayLandingPage();
+        Scanner scanner = new Scanner(System.in);
+        int selectLogin = scanner.nextInt();
+        if (selectLogin == 1){
+            userController.mainMenu();
+//            orderController.mainMenu();
+//            orderDetailController.mainMenu();
+        } else if (selectLogin == 2) {
+            merchantController.mainMenu();
+//            productController.mainMenu();
+        }
     }
+
 }
