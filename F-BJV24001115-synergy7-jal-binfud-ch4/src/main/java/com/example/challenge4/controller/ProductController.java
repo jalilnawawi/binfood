@@ -27,17 +27,26 @@ public class ProductController {
     ProductView productView = new ProductView();
 
     public void mainMenu(){
-        merchantController.showExistingMerchant();
-        createProduct();
-//        showAllProduct();
-//        getProductByName();
-//        updateProduct();
-//        deleteProduct();
-//        showProductByMerchant();
+        Scanner scanner = new Scanner(System.in);
+        productView.productServiceDisplay();
+        System.out.print("Pilih opsi => ");
+        int selectMenu = scanner.nextInt();
+        if (selectMenu == 1){
+            createProduct();
+        } else if (selectMenu == 2) {
+            showAllProduct();
+        } else if (selectMenu == 3){
+            showProductByMerchant();
+        } else if (selectMenu == 4) {
+            updateProduct();
+        } else if (selectMenu == 5) {
+            deleteProduct();
+        }
     }
 
 
     public void createProduct(){
+        merchantController.showAllMerchant();
         System.out.print("Input nama merchant anda = ");
         Scanner scanner = new Scanner(System.in);
         String merchantName = scanner.nextLine();
@@ -72,14 +81,11 @@ public class ProductController {
                 + product.getName() + " | " + "\t"
                 + product.getPrice()
         ));
-//        System.out.println(productList.get(1).getName() + " | "
-//            + productList.get(1).getMerchant().getName()
-//        );
     }
 
     public void updateProduct(){
         System.out.println("Input nama produk yang akan diperbarui");
-        System.out.println("=> ");
+        System.out.print("=> ");
 
         Scanner inputProductName = new Scanner(System.in);
         String productName = inputProductName.nextLine();
@@ -135,9 +141,13 @@ public class ProductController {
     public void showProductByMerchant(){
         Merchant merchant = merchantController.showMerchantByInputName();
         List<Product> productList = productService.showProductFromSelectedMerchant(merchant);
+        System.out.println("===========================");
+        System.out.println("\t" + merchant.getName() + "\t");
+        System.out.println("===========================");
         productList.forEach(product -> System.out.println(
                 product.getName() + " | " + product.getPrice()
         ));
+        System.out.println("===========================");
     }
 
 }

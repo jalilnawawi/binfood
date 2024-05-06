@@ -4,7 +4,6 @@ import com.example.challenge4.model.Users;
 import com.example.challenge4.service.UsersService;
 import com.example.challenge4.view.UsersView;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -24,18 +23,14 @@ public class UserController {
 
         Scanner scanner = new Scanner(System.in);
         usersView.userServiceDisplay();
-        System.out.println("Pilih opsi => ");
+        System.out.print("Pilih opsi => ");
         int option = scanner.nextInt();
         if (option == 1){
-            showUsers();
-            getUserByUsername();
-        }
-        else if (option == 2){
             createUser();
-        } else if (option == 3) {
+        } else if (option == 2) {
             showUsers();
             updateUsers();
-        } else if (option == 4) {
+        } else if (option == 3) {
             showUsers();
             deleteUser();
         }
@@ -64,7 +59,9 @@ public class UserController {
     }
 
     public void showUsers(){
-        System.out.println("Berikut username yang sudah terdaftar");
+        System.out.println("===========================");
+        System.out.println("List User Aktif");
+        System.out.println("===========================");
         List<Users> usersList = usersService.showUser();
         usersList.forEach(user -> System.out.println(
                 user.getUsername() + " | " + user.getEmailAddress()
@@ -99,6 +96,7 @@ public class UserController {
     }
 
     String getUserByUsername(){
+        showUsers();
         Scanner scanner = new Scanner(System.in);
         System.out.print("Username = ");
         String username = scanner.nextLine();

@@ -15,4 +15,15 @@ public class ProductView {
                 + "Harga"
         );
     }
+
+    public void productServiceDisplay(){
+        System.out.println("=====================");
+        System.out.println("Halaman Product");
+        System.out.println("=====================");
+        System.out.println("1. Buat Produk");
+        System.out.println("2. List Produk");
+        System.out.println("3. List Produk dari Merchant");
+        System.out.println("4. Update Produk");
+        System.out.println("5. Hapus Produk");
+    }
 }

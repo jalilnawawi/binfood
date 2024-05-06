@@ -5,11 +5,14 @@ import com.example.challenge4.service.MerchantService;
 import com.example.challenge4.view.MerchantView;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 @Component
 @Slf4j
@@ -21,13 +24,19 @@ public class MerchantController {
     MerchantService merchantService;
 
     public void mainMenu(){
-//        createMerchant();
-//        showAllMerchant();
-//        showExistingMerchant();
-        showMerchantWithStatusOpen();
-        showMerchantByInputName();
-//        updateMerchant();
-//        deleteMerchant();
+        Scanner scanner = new Scanner(System.in);
+        merchantView.merchantServiceDisplay();
+        System.out.print("Pilih opsi => ");
+        int selectMenu = scanner.nextInt();
+        if (selectMenu == 1){
+            createMerchant();
+        } else if (selectMenu == 2) {
+            showAllMerchant();
+        } else if (selectMenu == 3) {
+            updateMerchant();
+        } else if (selectMenu == 4) {
+            deleteMerchant();
+        }
     }
 
     public void createMerchant(){
@@ -59,12 +68,6 @@ public class MerchantController {
         ));
     }
 
-    public void showExistingMerchant(){
-        List<Merchant> merchants = merchantService.showExistingMerchant();
-        merchants.forEach(merchant -> System.out.println(
-                merchant.getName() + " | " + merchant.getLocation()
-        ));
-    }
 
     public void showMerchantWithStatusOpen(){
         List<Merchant> merchants = merchantService.showOpenMerchant();
@@ -78,17 +81,12 @@ public class MerchantController {
     }
 
     public Merchant showMerchantByInputName(){
+        showMerchantWithStatusOpen();
         System.out.print("Silahkan pilih resto = ");
         Scanner scanner = new Scanner(System.in);
         String merchantName = scanner.nextLine();
 
-        Merchant selectMerchantByName = merchantService.getMerchantByName(merchantName);
-//        System.out.println("berikut data dari merchant " + selectMerchantByName.getName());
-//        System.out.println(selectMerchantByName.getName() +
-//                " | " + selectMerchantByName.getLocation() +
-//                " | " + selectMerchantByName.isOpen()
-//                );
-        return selectMerchantByName;
+        return merchantService.getMerchantByName(merchantName);
     }
 
     public void updateMerchant(){

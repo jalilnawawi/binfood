@@ -10,6 +10,23 @@ public class MainView {
                 "2. Merchant"
                 );
         System.out.print("=> ");
-        System.out.println();
     }
+
+    public void displayUserSelection(){
+        System.out.println("===================");
+        System.out.println("1. Masuk ke Halaman User");
+        System.out.println("2. Masuk ke Halaman Order");
+        System.out.println("===================");
+        System.out.println("note : jika ingin registrasi silahkan pilih opsi 1");
+        System.out.print("=> ");
+    }
+
+    public void displayMerchantSelection(){
+        System.out.println("============================");
+        System.out.println("1. Masuk ke Halaman Merchant");
+        System.out.println("2. Masuk ke Halaman Product");
+        System.out.println("============================");
+        System.out.print("=> ");
+    }
+
 }

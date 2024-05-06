@@ -10,9 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.time.LocalDate;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -35,9 +33,6 @@ public class MainController {
     OrderController orderController;
 
     @Autowired
-    OrderDetailController orderDetailController;
-
-    @Autowired
     ProductService productService;
 
     MainView mainView = new MainView();
@@ -50,19 +45,30 @@ public class MainController {
     Map<Long, OrderDetail> orderDetailMap = new HashMap<>();
 
     public void mainController(){
-//        mainView.displayLandingPage();
-//        Scanner scanner = new Scanner(System.in);
-//        int selectLogin = scanner.nextInt();
-//        if (selectLogin == 1){
-//            userController.mainMenu();
-////            orderController.mainMenu();
-////            orderDetailController.mainMenu();
-//        } else if (selectLogin == 2) {
-//            merchantController.mainMenu();
-////            productController.mainMenu();
-//        }
-        //TODO perbaiki servis pemesanan
-        orderDetailController.mainMenu();
+        mainView.displayLandingPage();
+        Scanner scanner = new Scanner(System.in);
+        int selectLogin = scanner.nextInt();
+        if (selectLogin == 1){
+            mainView.displayUserSelection();
+            Scanner menu = new Scanner(System.in);
+            int selectMenu = menu.nextInt();
+            if (selectMenu == 1){
+                userController.mainMenu();
+            } else if (selectMenu == 2) {
+                orderController.mainMenu();
+            }
+        } else if (selectLogin == 2) {
+            mainView.displayMerchantSelection();
+            Scanner input = new Scanner(System.in);
+            int select = input.nextInt();
+            if (select == 1){
+                merchantController.mainMenu();
+            } else if (select == 2) {
+                productController.mainMenu();
+            }
+        }
+
+
     }
 
 }

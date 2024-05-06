@@ -13,11 +13,8 @@ import java.util.Map;
 
 @Component
 public class OrderDetailView {
-    @Autowired
-    ProductService productService;
-
     public void displaySelectProduct(){
-        System.out.println("Pilih Menu => ");
+        System.out.print("Pilih Menu => ");
     }
 
     public void displayInputQuantity(){
@@ -31,6 +28,17 @@ public class OrderDetailView {
         System.out.println("=====================\n"
                 + "Konfirmasi dan Bayar\n"
                 + "=====================\n"
+        );
+    }
+
+    public void displayConfirmPaySelection(){
+        System.out.println(
+                "1. " + "Konfirmasi dan Bayar\n"
+                        + "2. " + "Kembali ke menu utama\n"
+                        + "3. " + "Keluar aplikasi"
+        );
+        System.out.print(
+                "Select option => "
         );
     }
 
