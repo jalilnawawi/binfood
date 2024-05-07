@@ -4,6 +4,9 @@ import com.example.challenge4.model.Users;
 import com.example.challenge4.repository.UserRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -41,5 +44,11 @@ public class UsersServiceImpl implements UsersService{
     public Users getUserByUsername(String username) {
         Optional<Users> usersOptional = userRepository.findByUsername(username);
         return  usersOptional.get();
+    }
+
+    @Override
+    public List<Users> getAllUsersPageable(String username, int page, int amount) {
+        Pageable pageable = PageRequest.of(page-1, amount, Sort.by("username"));
+        return userRepository.findByUsernameLike(username, pageable);
     }
 }

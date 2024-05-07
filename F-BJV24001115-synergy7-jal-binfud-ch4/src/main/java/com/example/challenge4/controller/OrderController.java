@@ -29,6 +29,9 @@ public class OrderController {
     OrderService orderService;
 
     @Autowired
+    OrderDetailService orderDetailService;
+
+    @Autowired
     ProductService productService;
 
     OrderDetailView orderDetailView = new OrderDetailView();
@@ -97,6 +100,7 @@ public class OrderController {
             orderDetail.setOrder(order);
             orderDetail.setProduct(selectedProduct);
             orderDetail.setQuantity(quantity);
+            orderDetailService.create(orderDetail);
             orderDetailMap.put(generateIdForMap(), orderDetail);
         }
 

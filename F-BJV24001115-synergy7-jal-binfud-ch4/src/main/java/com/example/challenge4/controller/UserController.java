@@ -33,6 +33,8 @@ public class UserController {
         } else if (option == 3) {
             showUsers();
             deleteUser();
+        } else if (option == 4){
+            showAllUserPageAble();
         }
     }
 
@@ -101,5 +103,10 @@ public class UserController {
         System.out.print("Username = ");
         String username = scanner.nextLine();
         return username;
+    }
+
+    public void showAllUserPageAble(){
+        List<Users> usersList = usersService.getAllUsersPageable("abdul%", 1, 2);
+        usersList.forEach(users -> System.out.println(users.getUsername()));
     }
 }

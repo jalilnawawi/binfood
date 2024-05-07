@@ -11,4 +11,6 @@ public interface UsersService {
     void updateUserByProcedure(UUID id, String username, String email, String password);
     void deleteUserByProcedure(UUID id);
     Users getUserByUsername(String username);
+
+    List<Users> getAllUsersPageable(String username, int page, int amount);
 }

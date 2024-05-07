@@ -19,5 +19,6 @@ public class UsersView {
         System.out.println("1. Register");
         System.out.println("2. Update User");
         System.out.println("3. Hapus User");
+        System.out.println("4. Test Pagination");
     }
 }

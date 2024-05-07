@@ -2,6 +2,7 @@ package com.example.challenge4.repository;
 
 
 import com.example.challenge4.model.Users;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.query.Procedure;
 import org.springframework.stereotype.Repository;
@@ -22,4 +23,6 @@ public interface UserRepository extends JpaRepository<Users, UUID> {
     void usersDeleteData(UUID id);
 
     Optional<Users> findByUsername(String username);
+
+    List<Users> findByUsernameLike(String username, Pageable pageable);
 }
