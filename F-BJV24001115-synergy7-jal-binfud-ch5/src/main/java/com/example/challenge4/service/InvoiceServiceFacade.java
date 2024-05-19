@@ -34,6 +34,16 @@ public class InvoiceServiceFacade {
                 orderDetailService.getOrderDetailByUserId(userId).stream().findAny().get()
                         .getTotalPrice().toString()
         );
+        orderDetailReportDto.setOrderId(
+                String.valueOf(orderDetailService.getOrderDetailByUserId(userId).stream().findAny()
+                        .get().getOrder().getId()
+                )
+        );
+        orderDetailReportDto.setMerchantName(
+                String.valueOf(orderDetailService.getOrderDetailByUserId(userId).stream().findAny()
+                        .get().getProduct().getMerchant().getName()
+                )
+        );
 
         return orderDetailReportDto;
     }

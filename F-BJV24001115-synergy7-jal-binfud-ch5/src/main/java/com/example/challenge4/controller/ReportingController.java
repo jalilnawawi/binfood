@@ -1,23 +1,19 @@
 package com.example.challenge4.controller;
 
+import com.example.challenge4.dto.merchant.MerchantReportDto;
 import com.example.challenge4.dto.orderDetail.OrderDetailReportDto;
 import com.example.challenge4.service.InvoiceServiceFacade;
 import com.example.challenge4.service.JasperService;
 
+import com.example.challenge4.service.MerchantService;
 import net.sf.jasperreports.engine.JRException;
-import org.jfree.util.Log;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ByteArrayResource;
 import org.springframework.core.io.Resource;
-import org.springframework.http.ContentDisposition;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.*;
+import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.UUID;
 

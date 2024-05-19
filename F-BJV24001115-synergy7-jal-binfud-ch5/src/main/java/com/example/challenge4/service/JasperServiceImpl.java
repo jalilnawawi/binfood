@@ -5,6 +5,8 @@ import net.sf.jasperreports.engine.*;
 import net.sf.jasperreports.engine.data.JRBeanArrayDataSource;
 import net.sf.jasperreports.engine.util.JRLoader;
 import net.sf.jasperreports.engine.util.JRSaver;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ResourceUtils;
 
@@ -30,15 +32,17 @@ public class JasperServiceImpl implements JasperService {
             }
         }
 
-        Object[] OrderDetailReportDto = new Object[0];
+        Object[] OrderDetailReportDto = {orderDetailReportDto};
         JRBeanArrayDataSource dataSource = new JRBeanArrayDataSource(OrderDetailReportDto);
 
         Map<String, Object> parameters = new HashMap<>();
         parameters.put("username", orderDetailReportDto.getUsername());
         parameters.put("productName", orderDetailReportDto.getProductName());
-        parameters.put("price",String.valueOf(orderDetailReportDto.getPrice()));
-        parameters.put("quantity",String.valueOf(orderDetailReportDto.getQuantity()));
-        parameters.put("totalPrice", String.valueOf(orderDetailReportDto.getTotalPrice()));
+        parameters.put("price", orderDetailReportDto.getPrice());
+        parameters.put("quantity", orderDetailReportDto.getQuantity());
+        parameters.put("totalPrice", orderDetailReportDto.getTotalPrice());
+        parameters.put("orderId" , orderDetailReportDto.getOrderId());
+        parameters.put("merchantName", orderDetailReportDto.getMerchantName());
 
         JasperPrint jasperPrint;
         byte[] reportContent;

@@ -1,15 +1,22 @@
 package com.example.challenge4.dto.merchant;
 
-import com.example.challenge4.model.Merchant;
-import com.example.challenge4.model.Order;
-import com.example.challenge4.model.OrderDetail;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
-import java.time.LocalDate;
+import java.util.Date;
 
 @Data
 public class MerchantReportDto {
-    Merchant merchant;
-    LocalDate orderDate;
-    OrderDetail orderDetail;
+    @JsonProperty("merchant_name")
+    String merchantName;
+
+    @JsonProperty("order_time")
+    Date orderTime;
+
+    @JsonProperty("product_name")
+    String productName;
+
+    int quantity;
+    int price;
+    double totalPrice;
 }

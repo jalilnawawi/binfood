@@ -15,4 +15,6 @@ public interface OrderDetailService {
     OrderDetailDto create(Order order, Product product, int quantity, double totalPrice);
 
     List<OrderDetail> getOrderDetailByUserId(UUID userId);
+
+
 }

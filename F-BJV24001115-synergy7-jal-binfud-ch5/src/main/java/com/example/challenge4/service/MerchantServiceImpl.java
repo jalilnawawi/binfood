@@ -1,16 +1,17 @@
 package com.example.challenge4.service;
 
-import com.example.challenge4.dto.merchant.MerchantCreateRequestDto;
-import com.example.challenge4.dto.merchant.MerchantDeleteRequestDto;
-import com.example.challenge4.dto.merchant.MerchantDto;
-import com.example.challenge4.dto.merchant.MerchantUpdateStatus;
+import com.example.challenge4.dto.merchant.*;
 import com.example.challenge4.model.Merchant;
+import com.example.challenge4.model.Product;
 import com.example.challenge4.repository.MerchantRepository;
 import jakarta.persistence.EntityNotFoundException;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.UUID;
 
@@ -72,15 +73,6 @@ public class MerchantServiceImpl implements MerchantService{
     public List<Merchant> getOpenMerchant() {
         return merchantRepository.findOpenMerchant();
     }
-
-//    @Override
-//    public List<Merchant> getOpenMerchant(MerchantGetStatusOpenRequestDto merchantGetStatusOpenRequestDto) {
-//        List<Merchant> merchantList = new ArrayList<>();
-//        merchantList.forEach(merchant ->
-//                merchantGetStatusOpenRequestDto.setOpen(merchantGetStatusOpenRequestDto.isOpen())
-//        );
-//        return merchantList;
-//    }
 
 
 }

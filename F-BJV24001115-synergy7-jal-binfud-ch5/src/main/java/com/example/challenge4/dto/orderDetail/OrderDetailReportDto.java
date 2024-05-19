@@ -4,9 +4,11 @@ import lombok.Data;
 
 @Data
 public class OrderDetailReportDto {
-    String username;
-    String productName;
-    String price;
-    String quantity;
-    String totalPrice;
+    private String username;
+    private String productName;
+    private String price;
+    private String quantity;
+    private String totalPrice;
+    private String orderId;
+    private String merchantName;
 }
