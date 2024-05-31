@@ -1,6 +1,8 @@
 package com.example.challenge4.service;
 
 import com.example.challenge4.dto.orderDetail.OrderDetailDto;
+import com.example.challenge4.dto.orderDetail.OrderDetailMerchantReportDto;
+import com.example.challenge4.dto.orderDetail.OrderDetailRequestMerchantReportDto;
 import com.example.challenge4.model.Order;
 import com.example.challenge4.model.OrderDetail;
 import com.example.challenge4.model.Product;
@@ -16,5 +18,7 @@ public interface OrderDetailService {
 
     List<OrderDetail> getOrderDetailByUserId(UUID userId);
 
+    List<OrderDetail> getOrderDetailByMerchantId(UUID merchantId);
 
+    OrderDetailMerchantReportDto getMerchantReport(OrderDetailRequestMerchantReportDto orderDetailRequestMerchantReportDto);
 }

@@ -1,11 +1,14 @@
 package com.example.challenge4.controller;
 
 import com.example.challenge4.dto.merchant.MerchantReportDto;
+import com.example.challenge4.dto.orderDetail.OrderDetailMerchantReportDto;
 import com.example.challenge4.dto.orderDetail.OrderDetailReportDto;
+import com.example.challenge4.dto.orderDetail.OrderDetailRequestMerchantReportDto;
 import com.example.challenge4.service.InvoiceServiceFacade;
 import com.example.challenge4.service.JasperService;
 
 import com.example.challenge4.service.MerchantService;
+import com.example.challenge4.service.OrderDetailService;
 import net.sf.jasperreports.engine.JRException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ByteArrayResource;
@@ -22,6 +25,9 @@ import java.util.UUID;
 public class ReportingController {
     @Autowired
     InvoiceServiceFacade invoiceServiceFacade;
+
+    @Autowired
+    OrderDetailService orderDetailService;
 
     @Autowired
     JasperService jasperService;
@@ -41,4 +47,10 @@ public class ReportingController {
                                 .filename("order-report."+format).build().toString())
                 .body(resource);
     }
+
+    @GetMapping("/generate/{merchantId}")
+    public OrderDetailMerchantReportDto getMerchantReport(@PathVariable UUID merchantId, @RequestBody OrderDetailRequestMerchantReportDto orderDetailRequestMerchantReportDto){
+        return orderDetailService.getMerchantReport(orderDetailRequestMerchantReportDto);
+    }
+
 }

@@ -69,4 +69,9 @@ public class OrderDetailController {
 
         return new ResponseEntity<>(response, HttpStatus.CREATED);
     }
+
+    @GetMapping("merchant/{id}")
+    public ResponseEntity<List<OrderDetail>> getOrderDetailByMerchant(@PathVariable("id") UUID merchantId){
+        return new ResponseEntity<>(orderDetailService.getOrderDetailByMerchantId(merchantId), HttpStatus.OK);
+    }
 }

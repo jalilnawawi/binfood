@@ -1,13 +1,12 @@
-package com.example.challenge4.dto.merchant;
+package com.example.challenge4.dto.orderDetail;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 @Data
-public class MerchantReportDto {
+public class OrderDetailMerchantReportDto {
     @JsonProperty("merchant_name")
     String merchantName;
 
@@ -17,7 +16,5 @@ public class MerchantReportDto {
     @JsonProperty("product_name")
     String productName;
 
-    int quantity;
-    int price;
     double totalPrice;
 }
