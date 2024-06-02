@@ -1,0 +1,21 @@
+Order Id = 3b9d998e-089a-4702-9f40-d469108af521
+Order Time = 2024-05-08
+===============================
+BinarFud
+===============================
+
+Terima kasih sudah memesan di BinarFud
+
+Dibawah ini adalah pesanan anda:
+
+--------------------------------
+Indomie Goreng	2	10000
+Magelangan	1	13000
+Es Nutrisari	3	10000
+--------------------------------
+Total 		6	63000.0
+Pembayaran : BinarCash
+
+===============================
+Simpan struk ini sebagai bukti pembayaran
+===============================
