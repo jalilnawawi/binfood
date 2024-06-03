@@ -59,17 +59,33 @@ public class JwtUtils {
         return Keys.hmacShaKeyFor(keyBytes);
     }
 
-    public boolean validateJwtToken(String authToken) throws SignatureException {
+//    public boolean validateJwtToken(String authToken) throws SignatureException {
+//        try {
+//            Jwts.parser().setSigningKey(secretKey).parseClaimsJwt(authToken);
+//            return true;
+//        } catch (MalformedJwtException e){
+//            logger.error("Invalid JWT Token: {}", e.getMessage());
+//        } catch (ExpiredJwtException e){
+//            logger.error("JWT Token is expired: {}", e.getMessage());
+//        } catch (UnsupportedJwtException e){
+//            logger.error("JWT Token is unsupported: {}", e.getMessage());
+//        } catch (IllegalArgumentException e){
+//            logger.error("JWT claims string is empty: {}", e.getMessage());
+//        }
+//        return false;
+//    }
+
+    public boolean validateJwtToken(String authToken) {
         try {
-            Jwts.parser().setSigningKey(secretKey).parseClaimsJwt(authToken);
+            Jwts.parserBuilder().setSigningKey(getSignKey()).build().parseClaimsJws(authToken);
             return true;
-        } catch (MalformedJwtException e){
+        } catch (MalformedJwtException e) {
             logger.error("Invalid JWT Token: {}", e.getMessage());
-        } catch (ExpiredJwtException e){
+        } catch (ExpiredJwtException e) {
             logger.error("JWT Token is expired: {}", e.getMessage());
-        } catch (UnsupportedJwtException e){
+        } catch (UnsupportedJwtException e) {
             logger.error("JWT Token is unsupported: {}", e.getMessage());
-        } catch (IllegalArgumentException e){
+        } catch (IllegalArgumentException e) {
             logger.error("JWT claims string is empty: {}", e.getMessage());
         }
         return false;

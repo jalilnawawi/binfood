@@ -14,6 +14,7 @@ import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityCustomizer;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -51,16 +52,16 @@ public class SecurityConfig implements WebMvcConfigurer {
                             .requestMatchers("/merchant").permitAll()
                             .requestMatchers("/users").permitAll()
                             .requestMatchers("/product").permitAll()
-                            .requestMatchers("/v3/api-docs/**",
-                                        "/swagger*/**").permitAll()
+                            .requestMatchers("/swagger-ui.html",
+                                    "/v3/api-docs/**",
+                                    "/swagger*/**").permitAll()
                             .requestMatchers("/auth/user/signin",
                                     "/auth/hash/password",
                                     "/auth/register",
                                     "/auth/forgot/password",
                                     "/auth/reset/password",
                                     "/auth/activate/user"
-                            )
-                                .permitAll()
+                            ).permitAll()
                             .anyRequest().authenticated()
                 )
                 .authenticationProvider(authenticationProvider())
@@ -109,18 +110,18 @@ public class SecurityConfig implements WebMvcConfigurer {
         return authenticationConfiguration.getAuthenticationManager();
     }
 
-    @Bean
-    public CorsConfigurationSource corsConfigurationSource(){
-        CorsConfiguration config = new CorsConfiguration();
-        config.setAllowedOrigins(Arrays.asList("https://kompas.com", "https://localhost:4200"));
-        config.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "PATCH"));
-        config.setAllowedHeaders(Arrays.asList("Authorization"));
-        config.setAllowCredentials(true);
-
-        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-        source.registerCorsConfiguration("/**", config);
-        return source;
-    }
+//    @Bean
+//    public CorsConfigurationSource corsConfigurationSource(){
+//        CorsConfiguration config = new CorsConfiguration();
+//        config.setAllowedOrigins(Arrays.asList("https://localhost:4200"));
+//        config.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "PATCH"));
+//        config.setAllowedHeaders(Arrays.asList("Authorization"));
+//        config.setAllowCredentials(true);
+//
+//        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+//        source.registerCorsConfiguration("/**", config);
+//        return source;
+//    }
 
 
     @Bean
@@ -136,4 +137,11 @@ public class SecurityConfig implements WebMvcConfigurer {
                 .ignoreAcceptHeader(true)
                 .defaultContentType(MediaType.APPLICATION_JSON);
     }
+//
+//    @Bean
+//    WebSecurityCustomizer webSecurityCustomizer(){
+//        return (web) -> web.debug(false)
+//                .ignoring()
+//                .requestMatchers("/webjars/**", "/images/**", "/css/**", "/assets/**", "/favicon.ico");
+//    }
 }
