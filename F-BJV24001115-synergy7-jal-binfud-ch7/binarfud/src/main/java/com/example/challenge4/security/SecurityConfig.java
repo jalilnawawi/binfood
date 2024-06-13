@@ -62,7 +62,8 @@ public class SecurityConfig implements WebMvcConfigurer {
                                     "/auth/reset/password",
                                     "/auth/activate/user"
                             ).permitAll()
-                            .anyRequest().authenticated()
+                            .requestMatchers("localhost:8081/binarfud/sendUser").permitAll()
+                            .anyRequest().permitAll()
                 )
                 .authenticationProvider(authenticationProvider())
                 .addFilterBefore(authTokenFilter(), UsernamePasswordAuthenticationFilter.class)

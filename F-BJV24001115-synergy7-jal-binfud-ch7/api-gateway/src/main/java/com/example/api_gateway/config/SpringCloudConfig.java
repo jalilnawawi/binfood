@@ -13,11 +13,10 @@ public class SpringCloudConfig {
     public RouteLocator gatewayRoutes(RouteLocatorBuilder builder){
         return builder.routes()
                 .route("binarfud", r -> r.path("/binarfud/**")
-                        .uri("http://localhost:8080/")
-
+                        .uri("http://localhost:8081/")
                 )
-                .route("consumer", r -> r.path("/consumer/**")
-                        .uri("http://localhost:8081")
+                .route("notif-service", r -> r.path("/binarfud/notif")
+                        .uri("http://localhost:8082")
                 )
                 .build();
 

@@ -1,0 +1,14 @@
+package com.example.notif_service.kafka;
+
+import com.example.notif_service.dto.MailOtpDto;
+import org.springframework.kafka.annotation.KafkaListener;
+import org.springframework.stereotype.Component;
+
+@Component
+public class MessageConsumer {
+
+    @KafkaListener(topics = "testTopic", groupId = "mail-otp-id", containerFactory = "mailListener")
+    public void sendMessage(MailOtpDto mailOtpDto){
+        System.out.println("Message received: " + mailOtpDto);
+    }
+}

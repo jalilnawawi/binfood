@@ -8,18 +8,18 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class MailService {
-    @Autowired
-    Environment env;
-
-    @Autowired
-    JavaMailSender javaMailSender;
-
-    public void sendMail(String mailAddress, String title, String mailMessage){
-        SimpleMailMessage message = new SimpleMailMessage();
-        message.setFrom(env.getProperty("spring.mail.username"));
-        message.setTo(mailAddress);
-        message.setSubject(title);
-        message.setText(mailMessage);
-        javaMailSender.send(message);
-    }
+//    @Autowired
+//    Environment env;
+//
+//    @Autowired
+//    JavaMailSender javaMailSender;
+//
+//    public void sendMail(String mailAddress, String title, String mailMessage){
+//        SimpleMailMessage message = new SimpleMailMessage();
+//        message.setFrom(env.getProperty("spring.mail.username"));
+//        message.setTo(mailAddress);
+//        message.setSubject(title);
+//        message.setText(mailMessage);
+//        javaMailSender.send(message);
+//    }
 }
