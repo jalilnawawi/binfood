@@ -59,7 +59,6 @@ public class RegisServiceImpl implements RegisService {
             });
         }
         user.setRoles(roles);
-        user.setOtp(registerUserRequestDto.getOtp());
 
         usersRepository.save(user);
 

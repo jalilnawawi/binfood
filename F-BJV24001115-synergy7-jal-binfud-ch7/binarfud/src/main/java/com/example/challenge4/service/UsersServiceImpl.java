@@ -1,9 +1,6 @@
 package com.example.challenge4.service;
 
-import com.example.challenge4.dto.users.UsersCreateRequestDto;
-import com.example.challenge4.dto.users.UsersDeleteRequestDto;
-import com.example.challenge4.dto.users.UsersDto;
-import com.example.challenge4.dto.users.UsersUpdatePasswordRequsetDto;
+import com.example.challenge4.dto.users.*;
 import com.example.challenge4.model.accounts.ERole;
 import com.example.challenge4.model.accounts.Role;
 import com.example.challenge4.model.accounts.Users;
@@ -116,6 +113,15 @@ public class UsersServiceImpl implements UsersService{
             user.setRoles(roles);
             usersRepository.save(user);
         }
+    }
+
+    @Override
+    public UsersDto verificationByOtp(MailOtpDto mailOtpDto) {
+        Users user = usersRepository.findByEmailAddress(mailOtpDto.getEmail());
+
+        user.setOtp(mailOtpDto.getOtp());
+        usersRepository.save(user);
+        return modelMapper.map(user, UsersDto.class);
     }
 
     @Override

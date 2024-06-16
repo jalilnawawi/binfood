@@ -1,9 +1,6 @@
 package com.example.challenge4.service;
 
-import com.example.challenge4.dto.users.UsersCreateRequestDto;
-import com.example.challenge4.dto.users.UsersDeleteRequestDto;
-import com.example.challenge4.dto.users.UsersDto;
-import com.example.challenge4.dto.users.UsersUpdatePasswordRequsetDto;
+import com.example.challenge4.dto.users.*;
 import com.example.challenge4.model.accounts.Users;
 
 import java.util.List;
@@ -23,6 +20,8 @@ public interface UsersService {
     void createUserPostLogin(String username, String email);
 
     void createMerchantUserPostLogin(String username, String email);
+
+    UsersDto verificationByOtp(MailOtpDto mailOtpDto);
 
     Users getByUsername(String username);
 }

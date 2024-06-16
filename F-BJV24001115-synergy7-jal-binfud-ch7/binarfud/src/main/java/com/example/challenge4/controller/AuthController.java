@@ -4,7 +4,9 @@ import com.example.challenge4.dto.auth.login.ActivateUserRequestDto;
 import com.example.challenge4.dto.auth.login.JwtLoginResponse;
 import com.example.challenge4.dto.auth.login.LoginRequestDto;
 import com.example.challenge4.dto.auth.register.RegisterUserRequestDto;
+import com.example.challenge4.dto.users.MailOtpDto;
 import com.example.challenge4.dto.users.UsersDto;
+import com.example.challenge4.kafka.MessageProducer;
 import com.example.challenge4.model.accounts.ERole;
 import com.example.challenge4.model.accounts.Role;
 import com.example.challenge4.model.accounts.Users;
@@ -16,6 +18,7 @@ import com.example.challenge4.security.service.forgotPassword.ForgotPasswordServ
 import com.example.challenge4.security.service.register.RegisService;
 import com.example.challenge4.security.service.UserDetailsImpl;
 import com.example.challenge4.service.MailService;
+import com.example.challenge4.service.UsersService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -51,6 +54,9 @@ public class AuthController {
     RegisService regisService;
 
     @Autowired
+    UsersService usersService;
+
+    @Autowired
     ForgotPasswordServiceImpl forgotPasswordService;
 
     @Autowired
@@ -61,6 +67,9 @@ public class AuthController {
 
     @Autowired
     ActivationService activationService;
+
+    @Autowired
+    MessageProducer messageProducer;
 
     @PostMapping("/user/signin")
     public ResponseEntity<Map<String, Object>> userAuthenticate(@RequestBody LoginRequestDto loginRequestDto){
@@ -108,6 +117,9 @@ public class AuthController {
         Map<String, Object> data = new HashMap<>();
         data.put("users", regisService.registerNewUser(registerUserRequestDto));
         response.put("data", data);
+
+        String topic = "testTopic";
+        messageProducer.sendMessage(topic, registerUserRequestDto);
 
         return new ResponseEntity<>(response, HttpStatus.CREATED);
     }
@@ -167,5 +179,10 @@ public class AuthController {
     @PutMapping("activate/user")
     public UsersDto activateUser(@RequestBody ActivateUserRequestDto activateUserRequestDto){
         return activationService.activate(activateUserRequestDto);
+    }
+
+    @PutMapping("verifotp/user")
+    public UsersDto verif(@RequestBody MailOtpDto mailOtpDto){
+        return usersService.verificationByOtp(mailOtpDto);
     }
 }

@@ -63,6 +63,7 @@ public class SecurityConfig implements WebMvcConfigurer {
                                     "/auth/activate/user"
                             ).permitAll()
                             .requestMatchers("localhost:8081/binarfud/sendUser").permitAll()
+                            .requestMatchers("localhost:8081/binarfud/auth/verifotp/user").permitAll()
                             .anyRequest().permitAll()
                 )
                 .authenticationProvider(authenticationProvider())
