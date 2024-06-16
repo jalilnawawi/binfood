@@ -20,6 +20,9 @@ public class RegisterUserRequestDto {
     @Size(min = 8, max = 40)
     private String password;
 
+    @NotBlank
+    private String otp;
+
     private Set<String> role;
 
     public RegisterUserRequestDto(String username, String email, String password, Set<String> role) {

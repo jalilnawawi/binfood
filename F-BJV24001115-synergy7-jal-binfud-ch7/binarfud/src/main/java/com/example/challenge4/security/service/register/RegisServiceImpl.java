@@ -13,6 +13,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
+import java.util.Random;
 import java.util.Set;
 
 @Service
@@ -58,10 +59,18 @@ public class RegisServiceImpl implements RegisService {
             });
         }
         user.setRoles(roles);
+        user.setOtp(registerUserRequestDto.getOtp());
 
         usersRepository.save(user);
 
         return modelMapper.map(user, UsersDto.class);
+    }
+
+    @Override
+    public String generateOtp() {
+        Random random = new Random();
+        int otp = random.nextInt(1000000);
+        return String.valueOf(otp);
     }
 
 }

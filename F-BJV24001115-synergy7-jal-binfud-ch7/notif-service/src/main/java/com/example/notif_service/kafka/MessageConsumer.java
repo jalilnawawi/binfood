@@ -7,8 +7,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class MessageConsumer {
 
-    @KafkaListener(topics = "testTopic", groupId = "mail-otp-id", containerFactory = "mailListener")
-    public void sendMessage(MailOtpDto mailOtpDto){
-        System.out.println("Message received: " + mailOtpDto);
+    @KafkaListener(topics = "testTopic", groupId = "mail-otp-id")
+    public void sendMessage(String otp){
+        System.out.println("Message received your OTP : " + otp);
     }
 }

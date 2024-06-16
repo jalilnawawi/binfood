@@ -15,32 +15,22 @@ import org.springframework.kafka.support.serializer.JsonDeserializer;
 import java.util.HashMap;
 import java.util.Map;
 
-@EnableKafka
 @Configuration
 public class KafkaConsumerConfig {
 
     @Bean
-    public ConsumerFactory<String, MailOtpDto> consumerFactory(){
+    public ConsumerFactory<String, String> consumerFactory(){
         Map<String, Object> configs = new HashMap<>();
         configs.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
-        configs.put(ConsumerConfig.GROUP_ID_CONFIG, "mail-otp-id");
         configs.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
-        configs.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, JsonDeserializer.class);
-//        configs.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, ErrorHandlingDeserializer.class);
-//        configs.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, ErrorHandlingDeserializer.class);
-//        configs.put(ErrorHandlingDeserializer.VALUE_DESERIALIZER_CLASS, JsonDeserializer.class.getName());
-//        configs.put(JsonDeserializer.VALUE_DEFAULT_TYPE, MailOtpDto.class.getName());
-        configs.put(JsonDeserializer.TRUSTED_PACKAGES, "*");
-        return new DefaultKafkaConsumerFactory<>(
-                configs,
-                new StringDeserializer(),
-                new JsonDeserializer<>(MailOtpDto.class)
-        );
+        configs.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
+        configs.put(ConsumerConfig.GROUP_ID_CONFIG, "mail-otp-id");
+        return new DefaultKafkaConsumerFactory<>(configs);
     }
 
     @Bean
-    public ConcurrentKafkaListenerContainerFactory<String, MailOtpDto> mailListener(){
-        ConcurrentKafkaListenerContainerFactory<String, MailOtpDto> factory =
+    public ConcurrentKafkaListenerContainerFactory<String, String> mailListener(){
+        ConcurrentKafkaListenerContainerFactory<String, String> factory =
                 new ConcurrentKafkaListenerContainerFactory<>();
         factory.setConsumerFactory(consumerFactory());
         return factory;

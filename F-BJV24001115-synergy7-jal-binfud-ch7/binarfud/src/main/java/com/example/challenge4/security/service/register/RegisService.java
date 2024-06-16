@@ -5,4 +5,5 @@ import com.example.challenge4.dto.users.UsersDto;
 
 public interface RegisService {
     UsersDto registerNewUser(RegisterUserRequestDto registerUserRequestDto);
+    String generateOtp();
 }

@@ -16,16 +16,16 @@ import java.util.Map;
 @Configuration
 public class KafkaProducerConfig {
     @Bean
-    public ProducerFactory<String, MailOtpDto> producerFactory(){
+    public ProducerFactory<String, String> producerFactory(){
         Map<String, Object> configs = new HashMap<>();
         configs.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
         configs.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
-        configs.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, JsonSerializer.class);
+        configs.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
         return new DefaultKafkaProducerFactory<>(configs);
     }
 
     @Bean
-    public KafkaTemplate<String, MailOtpDto> kafkaTemplate(){
+    public KafkaTemplate<String, String> kafkaTemplate(){
         return new KafkaTemplate<>(producerFactory());
     }
 }
