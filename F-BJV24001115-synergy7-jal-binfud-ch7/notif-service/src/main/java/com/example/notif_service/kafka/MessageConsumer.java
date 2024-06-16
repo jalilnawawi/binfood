@@ -9,7 +9,7 @@ public class MessageConsumer {
 
     @KafkaListener(topics = "testTopic", groupId = "mail-otp-id")
     public void sendMessage(String otp){
-        System.out.println("Message received your OTP : " + otp + "/n" +
+        System.out.println("Message received your OTP : " + otp + "\n" +
             "or can check your email"
         );
     }
