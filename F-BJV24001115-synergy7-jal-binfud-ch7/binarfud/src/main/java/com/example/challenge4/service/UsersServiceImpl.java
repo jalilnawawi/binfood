@@ -118,7 +118,7 @@ public class UsersServiceImpl implements UsersService{
     @Override
     public UsersDto verificationByOtp(MailOtpDto mailOtpDto) {
         Users user = usersRepository.findByEmailAddress(mailOtpDto.getEmail());
-
+        user.setActive(true);
         user.setOtp(mailOtpDto.getOtp());
         usersRepository.save(user);
         return modelMapper.map(user, UsersDto.class);
