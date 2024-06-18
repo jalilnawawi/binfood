@@ -45,26 +45,27 @@ public class SecurityConfig implements WebMvcConfigurer {
         http
                 .cors(Customizer.withDefaults())
                 .csrf(AbstractHttpConfigurer::disable)
-//                .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-                .authorizeHttpRequests(auth ->
-                        auth
-                            .requestMatchers("/merchant/open").permitAll()
-                            .requestMatchers("/merchant").permitAll()
-                            .requestMatchers("/users").permitAll()
-                            .requestMatchers("/product").permitAll()
-                            .requestMatchers("/swagger-ui.html",
-                                    "/v3/api-docs/**",
-                                    "/swagger*/**").permitAll()
-                            .requestMatchers("/auth/user/signin",
+                .authorizeHttpRequests(auth -> {
+                    auth
+                            .requestMatchers("/auth/register").permitAll()
+                            .requestMatchers("/auth/verifotp/user").permitAll()
+                            .requestMatchers(
                                     "/auth/hash/password",
-                                    "/auth/register",
                                     "/auth/forgot/password",
                                     "/auth/reset/password",
                                     "/auth/activate/user"
                             ).permitAll()
+                            .requestMatchers("/swagger-ui.html",
+                                    "/v3/api-docs/**",
+                                    "/swagger*/**").permitAll()
+                            .requestMatchers("/merchant/open").permitAll()
+                            .requestMatchers("/merchant").permitAll()
+                            .requestMatchers("/users").permitAll()
+                            .requestMatchers("/product").permitAll()
+
                             .requestMatchers("localhost:8081/binarfud/sendUser").permitAll()
-                            .requestMatchers("localhost:8081/binarfud/auth/verifotp/user").permitAll()
-                            .anyRequest().permitAll()
+                            .anyRequest().authenticated();
+                        }
                 )
                 .authenticationProvider(authenticationProvider())
                 .addFilterBefore(authTokenFilter(), UsernamePasswordAuthenticationFilter.class)
@@ -81,10 +82,9 @@ public class SecurityConfig implements WebMvcConfigurer {
                                     );
 
                             //redirect to the new endpoint after login
-                            response.sendRedirect("/auth/user/oauth2/success");
+                            response.sendRedirect("/binarfud/auth/user/oauth2/success");
                         })
-                )
-        ;
+                );
 
         return http.build();
     }
