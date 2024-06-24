@@ -1,0 +1,14 @@
+
+W
+java:S4973'"<Strings and Boxed types should be compared using "equals()".(É¶®úÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Åğ¯ñøÿÿÿÿ
+`
+java:S13013"KReplace this "switch" statement by "if" statements to increase readability.(¶„æ
+3
+java:S2119F"Save and re-use this "Random".(¼İÅf
+[
+java:S1128"@Remove this unused import 'org.springframework.http.HttpStatus'.(íŸ¤Šúÿÿÿÿ
+t
+java:S1128"YRemove this unused import 'org.springframework.security.crypto.password.PasswordEncoder'.(‰¡ßáÿÿÿÿÿ
+h
+java:S1128"SRemove this unused import 'org.springframework.web.server.ResponseStatusException'.(¢‡‚

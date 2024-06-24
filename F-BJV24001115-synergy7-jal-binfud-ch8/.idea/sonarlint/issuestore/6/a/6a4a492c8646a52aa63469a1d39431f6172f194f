@@ -1,0 +1,10 @@
+
+ƒ
+java:S1192W"GDefine a constant instead of duplicating this literal "status" 3 times.(“şéJ$f00fcefe-d0c4-4824-a6b1-383aa0e523aa
+f	java:S106c"+Replace this use of System.out by a logger.(ÛÒÜİJ$46f087c7-d516-4de8-87e2-e16dd8cf3f13
+r
+java:S6437c"6Revoke and change this password, as it is compromised.(ÛÒÜİJ$583a71d7-ba43-49a0-b515-33022a5fa4b3
+ƒ
+java:S1128"GRemove this unused import 'com.example.challenge4.service.MailService'.(ØÎÁJ$ba3ee367-d28e-48e5-abb5-8e46da8d2f35
+
+java:S1128"SRemove this unused import 'org.springframework.security.access.annotation.Secured'.(…âíöJ$fc6d2f8b-bf73-4b0c-88ac-3b4c058150c7

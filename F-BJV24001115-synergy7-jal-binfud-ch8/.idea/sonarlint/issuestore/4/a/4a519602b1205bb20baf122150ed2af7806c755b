@@ -1,0 +1,23 @@
+
+œ
+java:S1488"`Immediately return this expression instead of assigning it to the temporary variable "delegate".(„áÄ^J$f188cbae-da76-465b-894b-7b6ccf5b89e3
+
+java:S3305)"RInject this field value directly into "filterChain", the only method that uses it.(…äàÆJ$dbd0c92a-2728-4494-bbb4-1f7097a9e02d
+
+java:S3305&"]Inject this field value directly into "authenticationProvider", the only method that uses it.(ñÊ®¤ùÿÿÿÿJ$844348a7-5dcf-45a6-8942-a07e2a59e50f
+|	java:S125r"<This block of commented-out lines of code should be removed.(Ş‰úùÿÿÿÿJ$60a96306-04d3-467b-806d-41cb7eebd70c
+}	java:S125"<This block of commented-out lines of code should be removed.(ÙüüèûÿÿÿÿJ$8a5faed8-4fbb-4219-b71b-032f5189dcd8
+
+java:S1128"TRemove this unused import 'com.example.challenge4.security.service.UserDetailsImpl'.(ãö”J$ca326af9-3847-4702-958d-9093c21291e3
+´
+java:S1128"sRemove this unused import 'org.springframework.security.config.annotation.web.configuration.WebSecurityCustomizer'.(†×¥ªüÿÿÿÿJ$c626d3c3-3dcd-46b9-b1ec-b44d1a70c542
+œ
+java:S1128"[Remove this unused import 'org.springframework.security.config.http.SessionCreationPolicy'.(‚ÌÎîüÿÿÿÿJ$bdb03e31-b9aa-482e-bb73-cfa849433608
+†
+java:S1128"KRemove this unused import 'org.springframework.web.cors.CorsConfiguration'.(î¤·`J$f081f1f2-8c4c-415b-aca4-c7db41d3b978
+’
+java:S1128"QRemove this unused import 'org.springframework.web.cors.CorsConfigurationSource'.(ŒºÏøşÿÿÿÿJ$50033880-0328-4a36-b8f6-8ddce337ca3b
+š
+java:S1128"YRemove this unused import 'org.springframework.web.cors.UrlBasedCorsConfigurationSource'.(µ²İûùÿÿÿÿJ$476ec864-0605-42d5-872d-5832b899d2e9
+n
+java:S1128 "-Remove this unused import 'java.util.Arrays'.(î–˜ÉüÿÿÿÿJ$6590e6f8-a01b-4dbf-9d4d-9888c5002e0b

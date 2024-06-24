@@ -1,0 +1,5 @@
+
+
+java:S6204."zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹
+d
+java:S1612-"IReplace this lambda with method reference 'GrantedAuthority.class::cast'.(ñÜ¼øÿÿÿÿ
