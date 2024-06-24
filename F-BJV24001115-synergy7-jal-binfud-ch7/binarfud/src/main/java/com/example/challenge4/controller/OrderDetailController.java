@@ -6,6 +6,7 @@ import com.example.challenge4.dto.orderDetail.OrderDetailResponseDto;
 import com.example.challenge4.model.Order;
 import com.example.challenge4.model.OrderDetail;
 import com.example.challenge4.model.Product;
+import com.example.challenge4.repository.ProductRepository;
 import com.example.challenge4.service.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +14,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
@@ -26,6 +28,9 @@ import java.util.UUID;
 @RestController
 @RequestMapping("orderDetail")
 public class OrderDetailController {
+    @Autowired
+    ProductRepository productRepository;
+
     @Autowired
     OrderService orderService;
 
@@ -52,11 +57,16 @@ public class OrderDetailController {
     }
 
     @PostMapping("place")
-    @PreAuthorize("hasRole('ROLE_USER')")
+//    @PreAuthorize("hasRole('ROLE_USER')")
+    //for ch 8
+    @Transactional
     public ResponseEntity<Map<String, Object>> add(@RequestBody OrderDetailRequestDto orderDetailRequestDto){
         Order order = orderService.getById(orderDetailRequestDto.getOrderId());
         Product product = productService.getById(orderDetailRequestDto.getProductId());
         double totalPrice = orderDetailRequestDto.getQuantity() * product.getPrice();
+
+        product.setStock(productService.adjustStock(orderDetailRequestDto).getStock());
+        productRepository.save(product);
 
         OrderDetailDto orderDetailDto = orderDetailFacade
                 .placeOrderDetail(order,product, orderDetailRequestDto.getQuantity(), totalPrice);

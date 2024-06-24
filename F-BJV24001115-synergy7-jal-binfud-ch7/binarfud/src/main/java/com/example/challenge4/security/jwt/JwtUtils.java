@@ -1,5 +1,6 @@
 package com.example.challenge4.security.jwt;
 
+import com.example.challenge4.dto.auth.login.LoginRequestDto;
 import com.example.challenge4.security.service.UserDetailsImpl;
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.io.Decoders;
@@ -8,14 +9,14 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.oauth2.core.oidc.user.OidcUser;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.security.Key;
 import java.security.SignatureException;
-import java.util.Base64;
-import java.util.Date;
+import java.util.*;
 
 @Service
 public class JwtUtils {
@@ -41,6 +42,16 @@ public class JwtUtils {
         return Jwts.builder()
                 .setSubject(username)
                 .setIssuedAt(now)
+                .setExpiration(new Date(now.getTime()+jwtExpiration))
+                .signWith(getSignKey(), SignatureAlgorithm.HS256)
+                .compact();
+    }
+
+    public String createToken(LoginRequestDto loginRequestDto) {
+        Date now = new Date();
+        return Jwts.builder()
+                .setSubject(loginRequestDto.getUsername())
+                .setIssuedAt(new Date(System.currentTimeMillis()))
                 .setExpiration(new Date(now.getTime()+jwtExpiration))
                 .signWith(getSignKey(), SignatureAlgorithm.HS256)
                 .compact();

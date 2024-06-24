@@ -1,5 +1,7 @@
 package com.example.challenge4.service;
 
+import com.example.challenge4.dto.order.OrderCreateRequestDto;
+import com.example.challenge4.dto.orderDetail.OrderDetailRequestDto;
 import com.example.challenge4.dto.product.ProductCreateRequestDto;
 import com.example.challenge4.dto.product.ProductDeleteRequestDto;
 import com.example.challenge4.dto.product.ProductDto;
@@ -17,6 +19,8 @@ public interface ProductService {
     ProductDto update(UUID productId, ProductUpdatePriceRequestDto productUpdatePriceRequestDto);
 
     ProductDto delete(UUID productId, ProductDeleteRequestDto productDeleteRequestDto);
+
+    ProductDto adjustStock(OrderDetailRequestDto orderDetailRequestDto);
 
     Product getById(UUID productId);
 

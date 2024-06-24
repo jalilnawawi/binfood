@@ -40,7 +40,7 @@ public class ProductController {
     }
 
     @PostMapping
-    @PreAuthorize("hasRole('ROLE_MERCHANT')")
+//    @PreAuthorize("hasRole('ROLE_MERCHANT')")
     public ResponseEntity<Map<String, Object>> add(@RequestBody ProductCreateRequestDto productCreateRequestDto){
         Map<String, Object> response = new HashMap<>();
         response.put("status", "success");

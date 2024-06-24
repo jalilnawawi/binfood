@@ -1,5 +1,7 @@
 package com.example.challenge4.service;
 
+import com.example.challenge4.dto.order.OrderCreateRequestDto;
+import com.example.challenge4.dto.orderDetail.OrderDetailRequestDto;
 import com.example.challenge4.dto.product.ProductCreateRequestDto;
 import com.example.challenge4.dto.product.ProductDeleteRequestDto;
 import com.example.challenge4.dto.product.ProductDto;
@@ -38,6 +40,7 @@ public class ProductServiceImpl implements ProductService{
         Product product = new Product();
         product.setName(productCreateRequestDto.getName());
         product.setPrice(productCreateRequestDto.getPrice());
+        product.setStock(productCreateRequestDto.getStock());
         product.setMerchant(productCreateRequestDto.getMerchant());
         productRepository.save(product);
 
@@ -65,6 +68,16 @@ public class ProductServiceImpl implements ProductService{
 
         return modelMapper.map(product, ProductDto.class);
     }
+
+    @Override
+    public ProductDto adjustStock(OrderDetailRequestDto orderDetailRequestDto) {
+        Product product = productRepository.findById(orderDetailRequestDto.getProductId()).get();
+        product.setStock(product.getStock() - orderDetailRequestDto.getQuantity());
+
+        productRepository.save(product);
+        return modelMapper.map(product, ProductDto.class);
+    }
+
 
     @Override
     public Product getById(UUID productId) {

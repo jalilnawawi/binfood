@@ -7,6 +7,7 @@ import lombok.Data;
 public class ProductCreateRequestDto {
     private String name;
     private int price;
+    private int stock;
 
     private Merchant merchant;
 }

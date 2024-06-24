@@ -35,6 +35,8 @@ public class Users extends BaseModel {
 
     private String otp;
 
+    private String token;
+
     private boolean deleted;
 
     @ManyToMany(fetch = FetchType.EAGER)

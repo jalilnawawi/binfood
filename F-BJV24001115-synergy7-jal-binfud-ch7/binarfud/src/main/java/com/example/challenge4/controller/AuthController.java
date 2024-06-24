@@ -3,6 +3,7 @@ package com.example.challenge4.controller;
 import com.example.challenge4.dto.auth.login.ActivateUserRequestDto;
 import com.example.challenge4.dto.auth.login.JwtLoginResponse;
 import com.example.challenge4.dto.auth.login.LoginRequestDto;
+import com.example.challenge4.dto.auth.login.LoginResponseDto;
 import com.example.challenge4.dto.auth.register.RegisterUserRequestDto;
 import com.example.challenge4.dto.users.MailOtpDto;
 import com.example.challenge4.dto.users.UsersDto;
@@ -17,6 +18,7 @@ import com.example.challenge4.security.service.activationUser.ActivationService;
 import com.example.challenge4.security.service.forgotPassword.ForgotPasswordServiceImpl;
 import com.example.challenge4.security.service.register.RegisService;
 import com.example.challenge4.security.service.UserDetailsImpl;
+import com.example.challenge4.service.AuthService;
 import com.example.challenge4.service.MailService;
 import com.example.challenge4.service.UsersService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,9 +34,11 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.oauth2.core.oidc.user.DefaultOidcUser;
 import org.springframework.security.oauth2.core.oidc.user.OidcUser;
+import org.springframework.validation.Validator;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("auth")
@@ -71,6 +75,13 @@ public class AuthController {
     @Autowired
     MessageProducer messageProducer;
 
+    @GetMapping("/user/login")
+    public String loginOAuth(@RequestBody LoginRequestDto loginRequestDto){
+        String jwt = jwtUtils.createToken(loginRequestDto);
+        return "Success Login, can use this token " + jwt;
+    }
+
+    //Login without OAuth
     @PostMapping("/user/signin")
     public ResponseEntity<Map<String, Object>> userAuthenticate(@RequestBody LoginRequestDto loginRequestDto){
         Authentication authentication = authenticationManager
@@ -102,6 +113,40 @@ public class AuthController {
         response.put("data", data);
         return new ResponseEntity<>(response, HttpStatus.CREATED);
     }
+
+
+    //login without oauth masih belum bisa
+//    @PostMapping("/user/login")
+//    public ResponseEntity<Map<String, Object>> loginUser(@RequestBody LoginRequestDto loginRequestDto) {
+//        Optional<Users> user = usersRepository.findByUsername(loginRequestDto.getUsername());
+//
+//        Map<String, Object> response = null;
+//        if (user.get().isActive()) {
+//
+//            Authentication authentication = authenticationManager
+//                    .authenticate(new UsernamePasswordAuthenticationToken(
+//                            loginRequestDto.getUsername(),
+//                            loginRequestDto.getPassword()
+//                    ));
+//
+//            SecurityContextHolder.getContext().setAuthentication(authentication);
+//            String jwt = jwtUtils.generateToken(authentication);
+//
+//            response = new HashMap<>();
+//            response.put("status", "success");
+//
+//            Map<String, Object> data = new HashMap<>();
+//            LoginResponseDto loginResponseDto = new LoginResponseDto(
+//                    jwt,
+//                    loginRequestDto.getUsername(),
+//                    true
+//            );
+//            data.put("response", loginResponseDto);
+//            response.put("data", data);
+//        }
+//        return new ResponseEntity<>(response, HttpStatus.OK);
+//
+//    }
 
     @GetMapping("hash/password")
     public String hashingPassword(){

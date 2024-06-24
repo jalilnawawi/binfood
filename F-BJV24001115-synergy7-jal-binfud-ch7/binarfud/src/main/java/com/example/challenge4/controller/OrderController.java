@@ -30,7 +30,7 @@ public class OrderController {
     }
 
     @PostMapping
-    @PreAuthorize("hasRole('ROLE_USER')")
+//    @PreAuthorize("hasRole('ROLE_USER')")
     public ResponseEntity<Map<String, Object>> add(@RequestBody OrderCreateRequestDto orderCreateRequestDto){
         Map<String, Object> response = new HashMap<>();
         response.put("status", "success");

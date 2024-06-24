@@ -19,6 +19,5 @@ public class SpringCloudConfig {
                         .uri("http://localhost:8082")
                 )
                 .build();
-
     }
 }

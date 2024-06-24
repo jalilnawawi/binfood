@@ -48,6 +48,7 @@ public class SecurityConfig implements WebMvcConfigurer {
                 .authorizeHttpRequests(auth -> {
                     auth
                             .requestMatchers("/auth/register").permitAll()
+                            .requestMatchers("/auth/user/login").permitAll()
                             .requestMatchers("/auth/verifotp/user").permitAll()
                             .requestMatchers(
                                     "/auth/hash/password",
@@ -62,17 +63,22 @@ public class SecurityConfig implements WebMvcConfigurer {
                             .requestMatchers("/merchant").permitAll()
                             .requestMatchers("/users").permitAll()
                             .requestMatchers("/product").permitAll()
+                            .requestMatchers("/order").permitAll()
+                            .requestMatchers("/orderDetail/place").permitAll()
 
                             .requestMatchers("localhost:8081/binarfud/sendUser").permitAll()
                             .anyRequest().authenticated();
                         }
                 )
+//                .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authenticationProvider(authenticationProvider())
                 .addFilterBefore(authTokenFilter(), UsernamePasswordAuthenticationFilter.class)
                 .formLogin(Customizer.withDefaults())
                 .oauth2Login(oauth2 -> oauth2
-                        .userInfoEndpoint(userInfo -> userInfo
-                                .oidcUserService(this.oidcUserService())
+//                        .loginPage("/auth/user/signin")
+                                .userInfoEndpoint(
+                                        userInfo -> userInfo.oidcUserService(this.oidcUserService()
+                                    )
                         )
                         .successHandler((request, response, authentication) -> {
                             DefaultOidcUser oidcUser = (DefaultOidcUser) authentication.getPrincipal();
