@@ -101,6 +101,11 @@
 			<artifactId>spring-kafka</artifactId>
 <!--			<version>3.2.0</version>-->
 		</dependency>
+		<dependency>
+			<groupId>com.google.firebase</groupId>
+			<artifactId>firebase-admin</artifactId>
+			<version>9.3.0</version>
+		</dependency>
 <!--		<dependency>-->
 <!--			<groupId>org.apache.kafka</groupId>-->
 <!--			<artifactId>kafka_2.13</artifactId>-->
@@ -115,6 +120,7 @@
 <!--			<groupId>org.springframework.cloud</groupId>-->
 <!--			<artifactId>spring-cloud-starter-openfeign</artifactId>-->
 <!--		</dependency>-->
+
 
 	</dependencies>
 
