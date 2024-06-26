@@ -1,0 +1,19 @@
+
+@	java:S106"+Replace this use of System.out by a logger.(‰²è 
+?	java:S106"+Replace this use of System.out by a logger.(„©S
+E	java:S106"+Replace this use of System.out by a logger.(ÿâ¦êıÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(ŸÓÓ¦şÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(€È£½şÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(ŸÓÓ¦şÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(ÆÉ²Û
+E	java:S106"+Replace this use of System.out by a logger.(•åèëùÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(üôŒ¢ÿÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(ß–Â‹ùÿÿÿÿ
+l
+java:S1128"QRemove this unused import 'com.example.challenge4.controller.MerchantController'.(¦ÊÕÕüÿÿÿÿ
+]
+java:S1128"BRemove this unused import 'com.example.challenge4.model.Merchant'.(Ë›ºØûÿÿÿÿ
+Q
+java:S1128";Remove this unused import 'org.hibernate.annotations.View'.(âàª‰
+I
+java:S1128".Remove this unused import 'java.util.Scanner'.(ÒÜÅ¸úÿÿÿÿ
