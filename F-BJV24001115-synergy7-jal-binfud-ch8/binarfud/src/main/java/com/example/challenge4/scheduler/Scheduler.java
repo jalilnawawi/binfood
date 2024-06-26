@@ -20,7 +20,7 @@ public class Scheduler {
     @Scheduled(cron = "*/10 * * * * *")
     public void send() throws ExecutionException, InterruptedException {
         NotificationRequest request = new NotificationRequest();
-        request.setTitle("Promo Binarfud");
+        request.setTitle("Promo Binarfud Siang Panas");
         request.setBody("Diskon 20% untuk setiap pembelian Kopi pada pukul 12.00");
         request.setToken("cugAUxyLgT_pqGBKVHpATR:APA91bE825BQzAnpwdbK4eqzlJaA7QFhnqWo0Rb8GWRR2PTJD80E8p4veqJVwoMjGuaB6FoSfSI8fCtFr6ZyDIJOfuWdQ08fTrOTdUwd08zMrfnGAg0ewLkFybLhedUBlxW2P-b--XSU");
         fcmService.sendMessageToToken(request);
