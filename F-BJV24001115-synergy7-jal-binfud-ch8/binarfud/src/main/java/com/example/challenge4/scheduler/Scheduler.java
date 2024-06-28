@@ -17,7 +17,7 @@ public class Scheduler {
     @Autowired
     FCMService fcmService;
 
-    @Scheduled(cron = "*/10 * * * * *")
+    @Scheduled(cron = "* * 12 * * *")
     public void send() throws ExecutionException, InterruptedException {
         NotificationRequest request = new NotificationRequest();
         request.setTitle("Promo Binarfud Siang Panas");

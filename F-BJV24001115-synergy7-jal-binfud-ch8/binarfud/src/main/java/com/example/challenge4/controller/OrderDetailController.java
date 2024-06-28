@@ -65,8 +65,12 @@ public class OrderDetailController {
         Product product = productService.getById(orderDetailRequestDto.getProductId());
         double totalPrice = orderDetailRequestDto.getQuantity() * product.getPrice();
 
-        product.setStock(productService.adjustStock(orderDetailRequestDto).getStock());
-        productRepository.save(product);
+        if (orderDetailRequestDto.getQuantity() < product.getStock()){
+            product.setStock(productService.adjustStock(orderDetailRequestDto).getStock());
+            productRepository.save(product);
+        } else {
+            throw new RuntimeException("Item stock is not enough");
+        }
 
         OrderDetailDto orderDetailDto = orderDetailFacade
                 .placeOrderDetail(order,product, orderDetailRequestDto.getQuantity(), totalPrice);
